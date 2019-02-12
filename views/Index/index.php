@@ -49,7 +49,7 @@
 			<div class="height-topbar width-100">
 				<div class="row align-center align-middle height-100">
 					<div class="large-12 columns">
-						<div style="background-image: url(images/Logo.png); height: 240px; width: 800px; margin: auto; background-size: cover; background-position: center;"></div>
+						<div style="background-image: url(<?=IMG?>Logo.png); height: 240px; width: 800px; margin: auto; background-size: cover; background-position: center;"></div>
 					</div>
 					<div class="large-12 columns">
 						<h1 class="white-color text-25 text-center">El encuentro más grande de mujeres líderes en la industria de las Tecnologías de la Información en Querétaro</h1>
@@ -139,55 +139,103 @@
 		<!-- Content -->
 		<div class="row">
 			<div class="large-12 medium-12 small-12 columns">
-				<details close>
-					<summary>
-						<div class="row">
-							<div class="large-1 columns">
-								hora
+
+				<ul class="accordion transparent" data-accordion data-allow-all-closed="true">
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns">
+									<h4 class="margin-0">8:00 am</h4>
+								</div>
+								<div class="large-10 medium-9 small-9 columns">
+									<h4 class="margin-0">Líderes Universitarias</h4>
+								</div>
 							</div>
-							<div class="large-9 columns">
-								Nombre del evento
-							</div>
-							<div class="large-1 columns">
-								Más
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns border-top padding-left-0 padding-right-0">
+									<div class="row">
+										<div class="large-12 columns">
+											
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-1 small-2 columns center text-center is-flex">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.TeresaGarciaGasca.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle ">
+											<p class="margin-0 blue-color p-name">Dra. Teresa García Gasca</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-1 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.JuanaElizabethElton.png);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. Juana Elizabeth Elton</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-1 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.LauraPerezTellez.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Lic. Laura Pérez Tellez</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-1 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.MarcelaAvila.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. en C. P. S. Marcela Ávila Eggleton</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-1 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.SilviaLorenaAmaya.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. Silvia Lorena Amaya Llano</p>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</summary>
-					<div class="row align-right">
-						<div class="large-1 columns"></div>
-						<div class="large-1 columns">
-							<div style="background-image: url(img/aztlan.jpg);"></div>
+					</li>
+
+					<li class="accordion-item border-bt" data-accordion-item="">
+						<a href="#" class="accordion-title">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns">
+									<h4 class="margin-0">8:00 am</h4>
+								</div>
+								<div class="large-10 medium-9 small-9 columns">
+									<h4 class="margin-0">Recepción</h4>
+								</div>
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="zvzzfy-accordion-label" aria-hidden="true" id="zvzzfy-accordion" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<div class="row">
+										<div class="large-1 medium-1 small-2 columns">
+											hola
+										</div>
+										<div class="large-11 medium-10 small-10 columns">
+											contenido
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="large-9 columns">
-							Descripción
-						</div>
-					</div>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
+					</li>
+
+				</ul>
+
 			</div>
 		</div>
 	</section>
@@ -350,55 +398,91 @@
 		<!-- Content -->
 		<div class="row">
 			<div class="large-12 medium-12 small-12 columns">
-				<div class="row">
-					<div class="large-2 columns">
-						hora
-					</div>
-					<div class="large-9 columns">
-						Nombre del evento
-					</div>
-					<div class="large-1 columns">
-						Más
-					</div>
-				</div>
-				<details close>
-					<summary>
-						<div class="row">
-							<div class="large columns">
-								hora
+				
+				<ul class="accordion transparent" data-accordion data-allow-all-closed="true">
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+								
 							</div>
-							<div class="large-10 columns">
-								Nombre del evento
-							</div>
-							<div class="large columns">
-								Más
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
 							</div>
 						</div>
-					</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+								
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+								
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item border-bottom" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+								
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
+							</div>
+						</div>
+					</li>
+					
+				</ul>
+
 			</div>
 		</div>
 	</section>
 	<script src="<?=JS?>config.js"></script>
-  	<script src="<?=JS?>jquery-3.1.1.js"></script>
+	<script src="<?=JS?>jquery-3.1.1.js"></script>
 	<script src="<?=JS?>funciones-datos.js"></script>
 	<script src="<?=JS?>validarInputs.js"></script>
 	<script src="<?=JS?>vendor/jquery.js"></script>
@@ -408,7 +492,7 @@
 	<script src="<?=JS?>cleave.js"></script>
 	<script src="<?=JS?>cleave.min.js"></script>
 	<script src="<?=JS?>register.js"></script>
-		<script src="<?=JS?>time.js"></script>
+	<script src="<?=JS?>time.js"></script>
 
 	<script>
 		$(document).foundation();

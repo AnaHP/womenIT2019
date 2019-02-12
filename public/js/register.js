@@ -59,7 +59,7 @@
  	labelInstitution.innerHTML="Institución";
  	formGroup3.appendChild(labelInstitution);
  	var selectInstitution = document.createElement("select");
- 	selectInstitution.className="form-input form-select";
+ 	selectInstitution.className="form-input margin-bottom-0";
  	selectInstitution.id="institutioninput"
  	// var options = ["UAQ", "UVM"];
  	// for(var i = 0; i < options.length; i++) {
@@ -80,7 +80,7 @@
  	// labelEvent.innerHTML="¿Cómo te enteraste del evento?";
  	// formGroup4.appendChild(labelEvent);
  	// var selectEvent = document.createElement("select");
- 	// selectEvent.className="form-input form-select";
+ 	// selectEvent.className="form-input margin-bottom-0";
  	// var options = ["Facebook", "Institución", "Otro"];
  	// for(var i = 0; i < options.length; i++) {
  	// 	var opt = options[i];
@@ -131,7 +131,7 @@
  	labelOccupation.innerHTML="Ocupación";
  	formGroup7.appendChild(labelOccupation);
  	var selectOccupation = document.createElement("select");
- 	selectOccupation.className="form-input form-select";
+ 	selectOccupation.className="form-input margin-bottom-0";
  	selectOccupation.id="occupationInput";
  	// var options = ["Estudiante", "Profesora", "Otro"];
  	// for(var i = 0; i < options.length; i++) {
@@ -154,7 +154,7 @@
  	labelEvent.innerHTML="¿Cómo te enteraste del evento?";
  	formGroup4.appendChild(labelEvent);
  	var selectEvent = document.createElement("select");
- 	selectEvent.className="form-input form-select";
+ 	selectEvent.className="form-input margin-bottom-0";
  	selectEvent.id="eventInput";
  	// var options = ["Facebook", "Institución", "Otro"];
  	// for(var i = 0; i < options.length; i++) {
@@ -165,7 +165,18 @@
  	// 	selectEvent.appendChild(el);
  	// }
  	formGroup4.appendChild(selectEvent);
-
+ 	var columnCheck = document.createElement("div");
+ 	columnCheck.className="large-6 columns";
+ 	fieldRow1.appendChild(columnCheck);
+ 	var legendCheck = document.createElement("legend");
+ 	legendCheck.innerHTML="Será en línea o asistir"
+ 	columnCheck.appendChild(legendCheck);
+ 	var checkOnline = document.createElement("input");
+ 	checkOnline.setAttribute("type", "radio");
+ 	columnCheck.appendChild(checkOnline);
+ 	var labelCheckOnline = document.createElement("label");
+ 	labelCheckOnline.innerHTML="En línea";
+ 	checkOnline.appendChild(labelCheckOnline);
  	var columnButton = document.createElement("div");
  	columnButton.className="large-12 columns";
  	fieldRow1.appendChild(columnButton);
@@ -239,7 +250,7 @@
  	labelInstitutionGroup.innerHTML="Institución";
  	formGroup2.appendChild(labelInstitutionGroup);
  	var selectInstitutionGroup = document.createElement("select");
- 	selectInstitutionGroup.className="form-input form-select";
+ 	selectInstitutionGroup.className="form-input margin-bottom-0";
  	var options = ["UAQ", "UVM"];
  	for(var i = 0; i < options.length; i++) {
  		var opt = options[i];
