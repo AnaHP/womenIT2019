@@ -62,6 +62,12 @@ class Index extends Controller{
       }
     }
 
+    /*public function grupo(){
+      $fuentes = $this->model->getGrupos();
+      if(is_array($grupos))
+
+    }*/
+
     private function getClaveRegistro(){
         $key = implode(getDate());
         $key.= rand(9863, 99999999);

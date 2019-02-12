@@ -49,7 +49,7 @@
 			<div class="height-topbar width-100">
 				<div class="row align-center align-middle height-100">
 					<div class="large-12 columns">
-						<div style="background-image: url(img/Logo.png); height: 240px; width: 800px; margin: auto; background-size: cover; background-position: center;"></div>
+						<div style="background-image: url(images/Logo.png); height: 240px; width: 800px; margin: auto; background-size: cover; background-position: center;"></div>
 					</div>
 					<div class="large-12 columns">
 						<h1 class="white-color text-25 text-center">El encuentro más grande de mujeres líderes en la industria de las Tecnologías de la Información en Querétaro</h1>
@@ -398,7 +398,7 @@
 		</div>
 	</section>
 	<script src="<?=JS?>config.js"></script>
-  <script src="<?=JS?>jquery-3.1.1.js"></script>
+  	<script src="<?=JS?>jquery-3.1.1.js"></script>
 	<script src="<?=JS?>funciones-datos.js"></script>
 	<script src="<?=JS?>validarInputs.js"></script>
 	<script src="<?=JS?>vendor/jquery.js"></script>

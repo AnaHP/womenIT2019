@@ -3,7 +3,7 @@
 	// error_reporting(E_ALL);
 	// ini_set('display_errors', 'off');
 
-	define( 'URL' ,"http://localhost/2019/CD/womenit2019/".basename(getcwd())."/");
+	define( 'URL' ,"http://localhost/".basename(getcwd())."/");
 
 	define( 'CSS' , URL."public/css/");
 	define( 'JS' , URL."public/js/" );

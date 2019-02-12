@@ -40,7 +40,7 @@
  	formGroup2.className="form-group margin-bt-2"
  	columnLeft.appendChild(formGroup2);
  	var labelDate = document.createElement("label");
- 	labelDate.innerHTML ="Fecha de Nacimiento";
+ 	labelDate.innerHTML ="Fecha de Nacimiento (aaaa:mm:dd)";
  	labelDate.className="form-label";
  	labelDate.setAttribute("for","dateInput");
  	formGroup2.appendChild(labelDate);

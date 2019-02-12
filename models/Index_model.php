@@ -2,6 +2,7 @@
 class Index_model extends Model
 {
 
+
 	function __construct(){
 		parent::__construct();
 	}
@@ -25,7 +26,7 @@ class Index_model extends Model
 		return $this->db->select('codigoConfirmacion','registroparticipantes');
 	}
 
-	//FIXME:
+	//FIXME: #Cambiar los datos
 	public function registro($datos, $codigo){
 		$insert = array(
 			'idRol'							=> $datos['rol'],
@@ -35,9 +36,11 @@ class Index_model extends Model
 			'correo' 						=> $datos['correo'],
 			'idInstitucion'			=> $datos['institucion'],
 			'fuenteInformacion'	=> $datos['informacion'],
-			'codigoConfirmacion'=> $codigo,
-			'estatus'						=> 'noAplicada',
-			'estatusCodigo'			=> 'noConfirmado'
+			'codigoAcceso'=> $codigo,
+			'estatusAsistencia'						=> 0,
+			'verificacionCorreo'			=> 0
+			#,'online'					=>0,
+			#'idGrupo'			=>$datos['idGrupo']
 		);
 
 		$correoRegistrado = $this->db->select('*','registroparticipantes',"correo LIKE '{$datos['correo']}'");

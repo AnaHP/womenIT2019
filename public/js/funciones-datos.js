@@ -10,9 +10,12 @@ function datos(){
       $("#institutioninput").html(inst);
       $("#occupationInput").html(rol);
       $("#eventInput").html(fuen);
+      /* $("#online").html(online);
+      $("#grupo").html(grupo);*/
     }
   });
 }
+
 function notificacion_(texto, titulo){
   $("#ventana").css("top","60px");
   $("#texto").html(titulo);
@@ -34,18 +37,17 @@ function registrar(){
   var rol = $("#occupationInput").val();
   var insti = $("#institutioninput").val();
   var info = $("#eventInput").val();
+  /*var online = $("#onlineInput").val(); -> Si estara en linea*/
+  /*var grupo = $("#grupoInput).val(); -> grupos en el que se*/
       if (checkEmpty($("#nameInput")) || checkEmpty($("#lastNameInput")) || checkEmpty($("#dateInput")) || checkEmpty($("#emailInput")) || checkEmpty($("#occupationInput")) || checkEmpty($("#institutioninput")) || checkEmpty($("#eventInput"))) {
         notificacion_("Revisa los campos faltantes", "Completar campos");
-        $("#register").click(registrar());
         return null;
       }
       if (!validateMail($("#correo"))) {
         notificacion_("Ingresa un correo válido", "Verifica");
-        $("#register").click(registrar());
         return null;
       }
-      notificacion_("Revisa los campos faltantes", "Completar campos");
-      $("#register").click(registrar());
+      
       boton.innerHTML = 'REGISTRANDO...';
       $.ajax({
         url:config.url+'Index/registro',
