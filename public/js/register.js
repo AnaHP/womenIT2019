@@ -60,7 +60,7 @@
  	formGroup3.appendChild(labelInstitution);
  	var selectInstitution = document.createElement("select");
  	selectInstitution.className="form-input form-select";
-  selectInstitution.id="institutioninput"
+ 	selectInstitution.id="institutioninput"
  	// var options = ["UAQ", "UVM"];
  	// for(var i = 0; i < options.length; i++) {
  	// 	var opt = options[i];
@@ -132,7 +132,7 @@
  	formGroup7.appendChild(labelOccupation);
  	var selectOccupation = document.createElement("select");
  	selectOccupation.className="form-input form-select";
-  selectOccupation.id="occupationInput";
+ 	selectOccupation.id="occupationInput";
  	// var options = ["Estudiante", "Profesora", "Otro"];
  	// for(var i = 0; i < options.length; i++) {
  	// 	var opt = options[i];
@@ -155,7 +155,7 @@
  	formGroup4.appendChild(labelEvent);
  	var selectEvent = document.createElement("select");
  	selectEvent.className="form-input form-select";
-  selectEvent.id="eventInput";
+ 	selectEvent.id="eventInput";
  	// var options = ["Facebook", "Institución", "Otro"];
  	// for(var i = 0; i < options.length; i++) {
  	// 	var opt = options[i];
@@ -192,8 +192,8 @@
  	var buttonRegister = document.createElement("a");
  	buttonRegister.className="button link-menu button-accept width-100 margin-bottom-0";
  	buttonRegister.innerHTML="Regístrate";
-  buttonRegister.id="register";
-  buttonRegister.onclick = registrar;
+ 	buttonRegister.id="register";
+ 	buttonRegister.onclick = registrar;
  	columnButton1.appendChild(buttonRegister);
  	animationLabel();
  	dateInpuntCleave();
@@ -252,7 +252,7 @@
 
  	var rowData = document.createElement("div");
  	rowData.className="row";
- 	rowData.style="height: calc(100% - 11rem";
+ 	// rowData.style="height: calc(100% - 11rem";
  	form.appendChild(rowData);
  	var fieldTitleGroup = document.createElement("div");
  	fieldTitleGroup.className="large-12 text-left columns";
@@ -260,10 +260,34 @@
  	var titleGroup = document.createElement("h3");
  	titleGroup.className="dark-blue-color";
  	titleGroup.innerHTML="Registrar Personas"
- 	fieldTitleGroup.appendChild(titleGroup)
+ 	fieldTitleGroup.appendChild(titleGroup);
+ 	var containerBottom = document.createElement("div");
+ 	containerBottom.className="height-bottom scroll-y";
+ 	containerBottom.id="containerBottom";
+ 	form.appendChild(containerBottom);
+
+ 	var fieldBottom = document.createElement("div");
+ 	fieldBottom.className="hola";
+ 	form.appendChild(fieldBottom);
+
+ 	var rowButtonRegister = document.createElement("div");
+ 	rowButtonRegister.className="row";
+ 	fieldBottom.appendChild(rowButtonRegister);
+ 	var columnRegister = document.createElement("div");
+ 	columnRegister.className="large-12 columns";
+ 	rowButtonRegister.appendChild(columnRegister);
+ 	var registerButton = document.createElement("a");
+ 	registerButton.className="button";
+ 	registerButton.innerHTML="Registar";
+ 	columnRegister.appendChild(registerButton);
+
+
+ 	var fieldDataGroup = document.createElement("div");
+ 	fieldDataGroup.className="row";
+ 	containerBottom.appendChild(fieldDataGroup);
  	var columnData1 = document.createElement("div");
  	columnData1.className="large-5 columns";
- 	rowData.appendChild(columnData1);
+ 	fieldDataGroup.appendChild(columnData1);
  	var formInputGroup1 = document.createElement("div");
  	formInputGroup1.className="form-group margin-bt-2"
  	columnData1.appendChild(formInputGroup1);
@@ -277,10 +301,9 @@
  	inputNameGroup.setAttribute("type", "text");
  	inputNameGroup.id="nameInputGroup"
  	formInputGroup1.appendChild(inputNameGroup);
-
  	var columnData2 = document.createElement("div");
  	columnData2.className="large-5 columns";
- 	rowData.appendChild(columnData2);
+ 	fieldDataGroup.appendChild(columnData2);
  	var formInputGroup1 = document.createElement("div");
  	formInputGroup1.className="form-group margin-bt-2"
  	columnData2.appendChild(formInputGroup1);
@@ -294,6 +317,102 @@
  	inputNameGroup.setAttribute("type", "email");
  	inputNameGroup.id="emailInputGroup"
  	formInputGroup1.appendChild(inputNameGroup);
+ 	var columnData3 = document.createElement("div");
+ 	columnData3.className="large-1 columns";
+ 	fieldDataGroup.appendChild(columnData3);
+ 	var columnData4 = document.createElement("div");
+ 	columnData4.className="large-1 columns";
+ 	fieldDataGroup.appendChild(columnData4);
+ 	var buttonDelete = document.createElement("a");
+ 	buttonDelete.className="button";
+ 	buttonDelete.innerHTML="Eliminar"
+ 	columnData3.appendChild(buttonDelete);
+ 	var iconDelete = document.createElement("i");
+ 	iconDelete.className="fas fa-user-minus";
+ 	buttonDelete.appendChild(iconDelete);
+ 	var buttonAdd = document.createElement("a");
+ 	buttonAdd.className="button buttonAdd";
+ 	buttonAdd.innerHTML="Agregar"
+ 	buttonAdd.id="buttonAdd";
+ 	columnData4.appendChild(buttonAdd);
+ 	var iconAdd = document.createElement("i");
+ 	iconAdd.className="fas fa-user-minus";
+ 	buttonAdd.appendChild(iconAdd);
+ 	document.getElementById("buttonAdd").addEventListener("click", function() {
+ 		addPerson();
+ 	});
+
+
+
+
+
 
  	animationLabel();
+ }
+
+
+ function addPerson(){
+ 	var buttonAddPast = document.querySelector(".buttonAdd");
+ 	  buttonAddPast.parentNode.removeChild(buttonAddPast);
+
+
+ 	var fieldDataGroup = document.createElement("div");
+ 	fieldDataGroup.className="row";
+ 	containerBottom.appendChild(fieldDataGroup);
+ 	var columnData1 = document.createElement("div");
+ 	columnData1.className="large-5 columns";
+ 	fieldDataGroup.appendChild(columnData1);
+ 	var formInputGroup1 = document.createElement("div");
+ 	formInputGroup1.className="form-group margin-bt-2"
+ 	columnData1.appendChild(formInputGroup1);
+ 	var labelName = document.createElement("label");
+ 	labelName.innerHTML ="Nombre";
+ 	labelName.className="form-label";
+ 	labelName.setAttribute("for","nameInputGroup");
+ 	formInputGroup1.appendChild(labelName);
+ 	var inputNameGroup = document.createElement("input");
+ 	inputNameGroup.className="form-input";
+ 	inputNameGroup.setAttribute("type", "text");
+ 	inputNameGroup.id="nameInputGroup"
+ 	formInputGroup1.appendChild(inputNameGroup);
+ 	var columnData2 = document.createElement("div");
+ 	columnData2.className="large-5 columns";
+ 	fieldDataGroup.appendChild(columnData2);
+ 	var formInputGroup1 = document.createElement("div");
+ 	formInputGroup1.className="form-group margin-bt-2"
+ 	columnData2.appendChild(formInputGroup1);
+ 	var labelEmailGroup = document.createElement("label");
+ 	labelEmailGroup.innerHTML ="Correo Electrónico";
+ 	labelEmailGroup.className="form-label";
+ 	labelEmailGroup.setAttribute("for","emailInputGroup");
+ 	formInputGroup1.appendChild(labelEmailGroup);
+ 	var inputNameGroup = document.createElement("input");
+ 	inputNameGroup.className="form-input";
+ 	inputNameGroup.setAttribute("type", "email");
+ 	inputNameGroup.id="emailInputGroup"
+ 	formInputGroup1.appendChild(inputNameGroup);
+ 	var columnData3 = document.createElement("div");
+ 	columnData3.className=" large-1 columns";
+ 	fieldDataGroup.appendChild(columnData3);
+ 	var columnData4 = document.createElement("div");
+ 	columnData4.className="large-1 columns";
+ 	fieldDataGroup.appendChild(columnData4);
+ 	var buttonDelete = document.createElement("a");
+ 	buttonDelete.className="button";
+ 	buttonDelete.innerHTML="Eliminar"
+ 	columnData3.appendChild(buttonDelete);
+ 	var iconDelete = document.createElement("i");
+ 	iconDelete.className="fas fa-user-minus";
+ 	buttonDelete.appendChild(iconDelete);
+ 	var buttonAdd = document.createElement("a");
+ 	buttonAdd.className="button buttonAdd";
+ 	buttonAdd.innerHTML="Agregar"
+ 	buttonAdd.id="buttonAdd";
+ 	columnData4.appendChild(buttonAdd);
+ 	var iconAdd = document.createElement("i");
+ 	iconAdd.className="fas fa-user-minus";
+ 	buttonAdd.appendChild(iconAdd);
+ 	document.getElementById("buttonAdd").addEventListener("click", function() {
+ 		addPerson();
+ 	});
  }
