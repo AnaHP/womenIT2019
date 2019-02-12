@@ -11,7 +11,9 @@ body{
 	overflow-y: scroll !important;
 	background: #F7F7F7 !important;
 }
-
+.scroll-y{
+	overflow-y: scroll !important;
+}
 .padding-general{
 	padding: 30px 0 30px 0;
 }
@@ -73,6 +75,9 @@ body{
 }
 .height-topbar{
 	height: calc(100vh - 54.375px) !important;
+}
+.height-bottom{
+	height: calc(100% - 20rem);
 }
 .width-100{
 	width: 100%;
