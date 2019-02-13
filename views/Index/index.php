@@ -869,7 +869,7 @@
 							<div class="row">
 								<div class="large-2 medium-3 small-3 columns"></div>
 								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
-									<p class="margin-0 p-name">Si los datos se ingresaron correctamente y no se encuentra en la bandeja de entrada, es necesario revisar el spam para verificar que ahí se encuentre, sino comunícate al teléfono 192 1200 ext. 5947</p>
+									<p class="margin-0 p-name">Si los datos se ingresaron correctamente y no se encuentra en la bandeja de entrada, es necesario revisar el spam para verificar que ahí se encuentre, sino comunícate al teléfono 192 1200 ext. 5911</p>
 								</div>
 							</div>
 						</div>
