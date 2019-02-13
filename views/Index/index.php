@@ -35,8 +35,8 @@
 						<li><a class="link-menu" href="#program">Programa</a></li>
 						<li><a class="link-menu" href="#multimedia">Multimedia</a></li>
 						<li><a class="link-menu" href="#register">Registro</a></li>
-					<!-- 	<li><a class="link-menu" href="#">Patrocinadores</a></li>
-						<li><a class="link-menu" href="#">FAQ</a></li> -->
+						<!-- <li><a class="link-menu" href="#">Patrocinadores</a></li> -->
+						<li><a class="link-menu" href="#faq">FAQ</a></li>
 					</ul>
 
 				</div>
@@ -53,13 +53,14 @@
 	<section class="gradient-1">
 		<div class="row expanded">
 			<div class="height-topbar width-100">
-				<div class="row align-center align-middle height-100">
-					<div class="large-12 medium-12 small-12 columns">
-						<div class="image-logo" style="background-image: url(<?=IMG?>logoconano.png);"></div>
+				<div class="row align-center align-middle height-100 padding-top-3 ">
+					<div class="large-10 medium-10 small-8 columns text-center">
+						<!-- <div class="image-logo" style="background-image: url(<?=IMG?>logoconano.png);"></div> -->
+						<img src="<?=IMG?>logoconano.png" alt="">
 					</div>
 					<div class="large-12 medium-12 small-12 columns">
 						<p class="text-center white-color text-first margin-0">Es un evento de mujeres para mujeres en dónde se comparten conocimientos, experiencias y visiones respecto al papel de la mujer en el ámbito profesional y en la industria de las tecnologías de la información.</p>
-						<h1 class="white-color text-center margin-0 text-second" style="font-weight: 600;">Mujeres guerreras, mujeres que inspiran</h1>
+						<h1 class="white-color text-center margin-0 text-second" style="font-weight: 600;">Mujeres guerreras, mujeres que inspiran.</h1>
 					</div>
 					<div class="large-10 medium-10 small-12 columns text-center">
 						<!-- <div class="row">
@@ -132,7 +133,7 @@
 					<div class="large-12 medium-12 small-12 columns text-center">
 						<div class="row">
 							<div class="large-2 large-offset-5 medium-4 medium-offset-4 small-6 small-offset-3 columns padding-rl-0">
-								<a class="button button-register white width-100 margin-bottom-0" href="#register">¡Regístrate Ahora!</a>
+								<a class="button button-register white width-100 margin-bottom-0">¡Regístrate Ahora!</a>
 							</div>
 						</div>
 
@@ -176,7 +177,7 @@
 								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
 									<div class="row">
 										<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
-											<h5 class="p-name">En la recepción se te pedirá tu código QR para confirmar tu asistencia y se te entregará tu kit de bienvenida al evento.</h5>
+											<h5 class="p-program">En la recepción se te pedirá tu código QR para confirmar tu asistencia y se te entregará tu kit de bienvenida al evento.</h5>
 										</div>
 									</div>
 								</div>
@@ -201,7 +202,7 @@
 								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
 									<div class="row">
 										<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
-											<h5 class="p-name">Nuestra rectora la Dra. Margarita Teresa de Jesús García Gasca nos hará el honor de inaugurar WomenIT 2019.</h5>
+											<h5 class="p-program">Nuestra rectora la Dra. Margarita Teresa de Jesús García Gasca nos hará el honor de inaugurar WomenIT 2019.</h5>
 										</div>
 									</div>
 								</div>
@@ -242,10 +243,10 @@
 									</div>
 									<div class="row padding-vertical-1">
 										<div class="large-2 medium-2 small-2 columns">
-											<div class="background-image" style="background-image: url(<?=IMG?>Dra.JuanaElizabethElton.png);"></div>
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.JuanaElizabethElton.jpg);"></div>
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
-											<p class="margin-0 blue-color p-name">Dra. Juana Elizabeth Elton</p>
+											<p class="margin-0 blue-color p-name">Dra. Juana Elizabeth Elton Puente</p>
 											<p class="margin-0 p-name">Directora de la Facultad de Ciencias Naturales</p>
 
 										</div>
@@ -321,7 +322,7 @@
 	<!-- Multimedia -->
 	<section class="">
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title" id="multimedia">
+		<div class="row padding-general-title-2" id="multimedia">
 			<div class="large-12 medium-12 small-12 columns">
 				<h1 class="title-page">Multimedia</h1>
 				<h2>Reviviendo WomenIT 2018</h2>
@@ -336,65 +337,156 @@
 							Your browser does not support HTML5 video.
 						</video>
 					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
-						<img src="./public/images/IMG_0584.jpg" alt="">
+					
+					<div class="row align-middle">
+						<!-- <div class="large-12 medium-12 small-12 columns">
+							<h3 class="dark-blue-color">Fotografías</h3>
+						</div> -->
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<img src="./public/images/IMG_0584.jpg" alt="">
+						</div>
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<div class="row">
+								<div class="large-6 medium-6 small-12 columns padding-left-0">
+									<img src="./public/images/IMG_0626.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-right-0">
+									<img src="./public/images/IMG_0787.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-left-0">
+									<img src="./public/images/IMG_0865.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-right-0">
+									<img src="./public/images/IMG_0556.jpg" alt="">
+								</div>
+							</div>
+							<!-- <img src="./public/images/IMG_0626.jpg" alt=""> -->
+						</div>
 					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
-						<img src="./public/images/IMG_0626.jpg" alt="">
+
+					<div class="row align-middle">
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<div class="row">
+								<div class="large-6 medium-6 small-12 columns padding-left-0">
+									<img src="./public/images/IMG_0704.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-right-0">
+									<img src="./public/images/IMG_0537.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-left-0">
+									<img src="./public/images/IMG_0630.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-right-0">
+									<img src="./public/images/IMG_0649.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<img src="./public/images/IMG_0674.jpg" alt="">
+						</div>
 					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+
+					<div class="row align-middle">
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<img src="./public/images/IMG_0695.jpg" alt="">
+						</div>
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<div class="row">
+								<div class="large-6 medium-6 small-12 columns padding-left-0">
+									<img src="./public/images/IMG_0730.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-right-0">
+									<img src="./public/images/IMG_0772.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-left-0">
+									<img src="./public/images/IMG_0779.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-right-0">
+									<img src="./public/images/IMG_0674.jpg" alt="">
+								</div>
+							</div>
+							<!-- <img src="./public/images/IMG_0626.jpg" alt=""> -->
+						</div>
+					</div>
+
+					<div class="row align-middle">
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<div class="row">
+								<div class="large-6 medium-6 small-12 columns padding-left-0">
+									<img src="./public/images/IMG_0829.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-right-0">
+									<img src="./public/images/IMG_0846.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-left-0">
+									<img src="./public/images/IMG_0848.jpg" alt="">
+								</div>
+								<div class="large-6 medium-6 small-12 columns padding-top-1 padding-right-0">
+									<img src="./public/images/IMG_0859.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="large-6 medium-6 small-12 columns padding-top-1">
+							<img src="./public/images/IMG_0795.jpg" alt="">
+						</div>
+					</div>
+
+
+
+					
+				<!-- 	<div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0787.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0865.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0556.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0704.jpg" alt="">
-					</div>
+					</div> -->
 
 
 
 
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0537.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0630.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+				<!-- 	<div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0649.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0674.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0695.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0730.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0772.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0779.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0674.jpg" alt="">
-					</div>
-					<div class="large-6 medium-6 small-12 columns padding-top-1">
+					</div> -->
+					<!-- <div class="large-6 medium-6 small-12 columns padding-top-1">
 						<img src="./public/images/IMG_0859.jpg" alt="">
-					</div>
+					</div> -->
 				</div>
 			</section>
 
 			<!-- Registro -->
-			<section class="height-topbar">
+			<section class="">
 				<!-- Title and Paragraph -->
-				<div class="row padding-general-title" id="register">
+				<div class="row padding-general-title-2" id="register" >
 					<div class="large-12 medium-12 small-12 columns">
 						<h1 class="title-page">Regístrate</h1>
 						<h2>¿Estás interesada en participar? Aparta tu lugar con el siguiente registro:</h2>
@@ -425,7 +517,7 @@
 						<div class="large-12 medium-12 small-12 columns paddin">
 							<!-- <p>Explicar de que trata esta sección</p> -->
 						</div>
-						<div class="large-5 medium-4 small-6 columns">
+						<div class="large-3 medium-4 small-12 columns padding-top-2">
 							<a class="button button-register white width-100 margin-bottom-0" id="buttonIndividual"  onclick="datos()">¡Regístrate Ahora!</a>
 						</div>
 					</div>
@@ -510,7 +602,7 @@
 	<!-- Patrocinadores -->
 	<!-- <section class=""> -->
 		<!-- Title and Paragraph -->
-		<!-- <div class="row padding-general-title">
+		<!-- <div class="row padding-general-title-2">
 			<div class="large-12">
 				<h1 class="title-page">Patrocinadores</h1>
 				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
@@ -523,24 +615,24 @@
 	</section> -->
 
 	<!-- FAQ -->
-	<!-- <section class=""> -->
+	<section class="height-topbar">
 		<!-- Title and Paragraph -->
-	<!-- 	<div class="row padding-general-title">
-			<div class="large-12">
-				<h1 class="title-page">FAQ</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
-			</div>
-		</div> -->
-		<!-- Content -->
-		<!-- <div class="row">
+		<div class="row padding-general-title-2" id="faq">
 			<div class="large-12 medium-12 small-12 columns">
+				<h1 class="title-page">FAQ</h1>
+				<h2>Encuentra las preguntas más frecuentes sobre WomenIT.</h2>
+			</div>
+		</div>
+		<!-- Content -->
+		<div class="row align-justify">
+			<div class="large-6 medium-6 small-12 columns">
 
 				<ul class="accordion transparent" data-accordion data-allow-all-closed="true">
 					<li class="accordion-item" data-accordion-item="">
 						<a href="#" class="accordion-title border-top">
 							<div class="row">
-								<div class="large-12 medium-3 small-3 columns">
-									<h4 class="margin-0">Pregunta</h4>
+								<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Es necesario registrarse?</h4>
 								</div>
 
 							</div>
@@ -549,7 +641,7 @@
 							<div class="row">
 								<div class="large-2 medium-3 small-3 columns"></div>
 								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
-									Respuesta
+									<p class="margin-0 p-name">Sí, con el registro aseguras tu lugar en el evento. Además, se hará entrega de un kit de bienvenida.</p>
 								</div>
 							</div>
 						</div>
@@ -558,17 +650,17 @@
 					<li class="accordion-item" data-accordion-item="">
 						<a href="#" class="accordion-title border-top">
 							<div class="row">
-								<div class="large-12 medium-3 small-3 columns">
-									<h4 class="margin-0">Pregunta</h4>
+								<div class="large-12 medium-12 small-12 columns  padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Hay algún costo por asistir?</h4>
 								</div>
 
 							</div>
 						</a>
 						<div class="accordion-content" data-tab-content="" style="display: none;">
 							<div class="row">
-								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-2 medium-3 small-3 columns  padding-left-0 padding-right-0"></div>
 								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
-									Respuesta
+									<p class="margin-0 p-name">No, el evento será totalmente gratuito.</p>
 								</div>
 							</div>
 						</div>
@@ -577,8 +669,8 @@
 					<li class="accordion-item" data-accordion-item="">
 						<a href="#" class="accordion-title border-top">
 							<div class="row">
-								<div class="large-12 medium-3 small-3 columns">
-									<h4 class="margin-0">Pregunta</h4>
+								<div class="large-12 medium-12 small-12 columns  padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Tengo que llevar algo?</h4>
 								</div>
 
 							</div>
@@ -587,7 +679,178 @@
 							<div class="row">
 								<div class="large-2 medium-3 small-3 columns"></div>
 								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
-									Respuesta
+									<p class="margin-0 p-name">No es necesario llevar nada, el mismo kit de bienvenida contiene una libreta, por si se quiere tomar notas.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns  padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Cuál es la fecha límite de registro?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">La fecha límite es un día antes del evento.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns  padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Se entregarán constancias de participación/asistencia?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">Sí, siempre y cuando hayas asistido al evento. Una vez concluido el evento, se enviará la constancia al correo electrónico que usaste para el registro.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns  padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Se tendrá acceso al Wifi?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">No, debido a que durante las conferencias no es necesario el uso de internet.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns  padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Puedo llevar mi laptop?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">Sí, aunque no es necesario.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Habrá alimentos en el evento?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">Sí, durante el evento se existirán descansos, en donde se hará entrega de un refrigerio.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Puedo tomar fotos o grabar video durante el evento?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">Sí, no hay ninguna restricción.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿El lugar cuenta con estacionamiento?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">Sí, el lugar cuenta con un amplio estacionamiento.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Habrá transporte hacia y desde el evento?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">No, sin embargo, la ubicación del lugar es apta para llegar en cualquier tipo transporte.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Se puede salir y regresar del lugar durante el evento?</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<p class="margin-0 p-name">Una vez que hayas ingresado, se puede salir y entrar sin problema.</p>
 								</div>
 							</div>
 						</div>
@@ -596,8 +859,8 @@
 					<li class="accordion-item border-bottom" data-accordion-item="">
 						<a href="#" class="accordion-title border-top">
 							<div class="row">
-								<div class="large-12 medium-3 small-3 columns">
-									<h4 class="margin-0">Pregunta</h4>
+								<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 question">¿Qué hago si no recibí el correo?</h4>
 								</div>
 
 							</div>
@@ -606,7 +869,7 @@
 							<div class="row">
 								<div class="large-2 medium-3 small-3 columns"></div>
 								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
-									Respuesta
+									<p class="margin-0 p-name">Si los datos se ingresaron correctamente y no se encuentra en la bandeja de entrada, es necesario revisar el spam para verificar que ahí se encuentre, sino comunícate al teléfono 192 1200 ext. 5947</p>
 								</div>
 							</div>
 						</div>
@@ -615,8 +878,23 @@
 				</ul>
 
 			</div>
+
+			<div class="large-5 medium-6 small-12 columns">
+				<div class="row">
+					<div >
+						
+					</div>
+				</div>
+				<iframe class="wh" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.1020460397012!2d-100.44410372875616!3d20.70608037948242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d3575fd626bb9f%3A0x8ffb27d4907d6de8!2sCentro+de+Negocios+UAQ!5e0!3m2!1ses-419!2smx!4v1550090083894" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			</div>
+
+
+
+
 		</div>
-	</section> -->
+	</section>
+
 	<script src="<?=JS?>config.js"></script>
 	<script src="<?=JS?>jquery-3.1.1.js"></script>
 	<script src="<?=JS?>funciones-datos.js"></script>
