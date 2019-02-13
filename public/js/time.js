@@ -27,11 +27,11 @@ function showRemaining() {
 	var textSeconds = document.getElementById('textSeconds');
 
 
-	document.getElementById('days').innerHTML = days + ' :';
+	document.getElementById('days').innerHTML = days;
 	textDays.innerHTML = 'días';
-	document.getElementById('hours').innerHTML = hours + ' :';
+	document.getElementById('hours').innerHTML = hours;
 	textHours.innerHTML = 'horas';
-	document.getElementById('minutes').innerHTML = minutes + ' :';
+	document.getElementById('minutes').innerHTML = minutes;
 	textMinutes.innerHTML = 'minutos';
 	document.getElementById('second').innerHTML  = seconds;
 	textSeconds.innerHTML = 'segundos';

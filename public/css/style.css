@@ -127,12 +127,23 @@ body{
 	background-size: cover; 
 	background-position: center;
 }
+.escudo{
+	position: absolute; 
+	z-index: 10;  
+	margin-top: 20px;
+}
+.escudo-fif{
+	position: absolute; 
+	z-index: 10; 
+	margin-top: 20px; 
+	margin-left: 100px; height: 100px;
+}
 .text-time{
 	margin-bottom: 0; 
 	font-size: 4rem;
 }
 .text-first{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 .text-time2{
 	margin-bottom: 0; 
@@ -180,7 +191,7 @@ section {
 
 /* -------------- PROGRAMA ---------------- */
 .gradient-2{
-	background-image: linear-gradient(0deg, rgba(252, 252, 252, 0.701961) 73%, rgba(229, 105, 178, 0.701961) 100.34%, rgba(229, 105, 178, 0.701961) 2.44%);
+	background-image: linear-gradient(0deg, rgb(247, 247, 247) 73%, rgba(229, 105, 178, 0.701961) 100.34%, rgba(229, 105, 178, 0.701961) 2.44%) !important;
 	background-position-x: initial;
 	background-position-y: initial;
 	background-size: initial;
@@ -273,6 +284,7 @@ section {
 	color: #999 !important;
 	transition: transform 150ms ease-out, font-size 150ms ease-out !important;
 	background: transparent !important;
+	font-size: 0.9rem !important;
 }
 .label-select{
 	font-size: .75em;
@@ -309,7 +321,9 @@ section {
 	background: transparent;
 }
 
-
+.button{
+	box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.65) !important;
+}
 
 @media only screen and (max-width: 40em) { 
 	.text-25{
@@ -331,17 +345,33 @@ section {
 		font-size: 1rem;
 	}
 	.text-first{
-	font-size: 1rem;
-}
-.text-15{
-	font-size: 0.8rem;
-}
-.background-image{
-	background-size: cover;
-	background-position: center;
-	height: 40px;
-	width:40px;
-	border-radius: 50%;
+		font-size: 1rem;
+	}
+	.text-15{
+		font-size: 0.8rem;
+	}
+	.background-image{
+		background-size: cover;
+		background-position: center;
+		height: 40px;
+		width:40px;
+		border-radius: 50%;
+	}
+	.escudo{
+		position: absolute; 
+		z-index: 10;  
+		margin-top: 20px;
+		height: 50px;
+	}
+	.escudo-fif{
+		position: absolute; 
+		z-index: 10; 
+		margin-top: 20px; 
+		margin-left: 50px; 
+		height: 50px;
+	}
+	.p-name{
+	font-size: 0.9rem;
 }
 }
 
@@ -351,7 +381,7 @@ section {
 		font-size: 2rem;
 	}
 	.image-logo{
-	height: 140px; 
+		height: 140px; 
 		width: 400px;
 		margin: auto; 
 		background-size: cover; 
@@ -366,11 +396,31 @@ section {
 		font-size: 1rem;
 	}
 	.text-first{
-	font-size: 1.5rem;
-}
-.text-15{
-	font-size: 0.9rem;
-}
+		font-size: 1rem;
+	}
+	.text-15{
+		font-size: 0.9rem;
+	}
+	.escudo{
+		position: absolute; 
+		z-index: 10;  
+		margin-top: 20px;
+		height: 60px;
+	}
+	.escudo-fif{
+		position: absolute; 
+		z-index: 10; 
+		margin-top: 20px; 
+		margin-left: 60px; 
+		height: 60px;
+	}
+	.background-image{
+		background-size: cover;
+		background-position: center;
+		height: 50px;
+		width:50px;
+		border-radius: 50%;
+	}
 
 }
 
@@ -394,6 +444,7 @@ section {
 		margin-bottom: 0; 
 		font-size: 1rem;
 	}
+	
 
 }
 
