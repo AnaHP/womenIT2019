@@ -113,6 +113,10 @@ body{
 	top: 0 !important;
 }
 .link-menu{
+	color: var(--dark-blue) !important;
+	font-weight: 500;
+}
+.link-menu:hover{
 	color: var(--general-pink) !important;
 }
 .sticky-topbar {
@@ -121,7 +125,7 @@ body{
 
 /* -------------- Home ---------------- */
 .image-logo{
-	height: 265px; 
+	height: 243px; 
 	width: 700px; 
 	margin: auto; 
 	background-size: cover; 
@@ -142,16 +146,26 @@ body{
 	margin-bottom: 0; 
 	font-size: 4rem;
 }
-.text-first{
-	font-size: 1.5rem;
-}
 .text-time2{
 	margin-bottom: 0; 
 	font-size: 1.8rem;
 }
+.text-first{
+	font-size: 1.3rem;
+}
 .button-accept{
 	background: #283A53 !important;
 	color: white !important;
+}
+.button-register{
+	color: var(--general-pink) !important;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.button-register:hover{
+	color: white !important;
+	background: var(--general-pink) !important;
+
 }
 
 section {
@@ -329,6 +343,9 @@ section {
 	.text-25{
 		font-size: 2rem;
 	}
+	.text-second{
+		font-size: 1.2rem;
+	}
 	.image-logo{
 		height: 70px; 
 		width: 200px; 
@@ -345,7 +362,7 @@ section {
 		font-size: 1rem;
 	}
 	.text-first{
-		font-size: 1rem;
+		font-size: 0.8rem;
 	}
 	.text-15{
 		font-size: 0.8rem;
@@ -353,8 +370,8 @@ section {
 	.background-image{
 		background-size: cover;
 		background-position: center;
-		height: 40px;
-		width:40px;
+		height: 30px;
+		width:30px;
 		border-radius: 50%;
 	}
 	.escudo{
@@ -421,6 +438,9 @@ section {
 		width:50px;
 		border-radius: 50%;
 	}
+	.text-hour-program{
+		font-size: 1rem;
+	}
 
 }
 
@@ -429,21 +449,21 @@ section {
 	.text-25{
 		font-size: 2rem;
 	}
-	.image-logo{
-		height: 140px; 
+	/*.image-logo{
+		height: 170px; 
 		width: 500px; 
 		margin: auto; 
 		background-size: cover; 
 		background-position: center;
-	}
-	.text-time{
+	}*/
+	/*.text-time{
 		margin-bottom: 0; 
 		font-size: 2rem;
 	}
 	.text-time2{
 		margin-bottom: 0; 
 		font-size: 1rem;
-	}
+	}*/
 	
 
 }
