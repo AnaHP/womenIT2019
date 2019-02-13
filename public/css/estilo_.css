@@ -1026,3 +1026,17 @@ footer{
 	background: #EC407A;
 	cursor: default !important;
 }
+
+@media only screen and (max-width: 40em) { 
+	.error{
+		margin-top: 30% !important;
+	}
+		.error>h1{
+			font-size: 2em !important;
+			margin-top: 90px !important;
+		}
+		.error>h2{
+			font-size: 1.5em !important;
+		}
+	
+	}
