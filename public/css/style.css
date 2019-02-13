@@ -102,7 +102,7 @@ body{
 	font-size: 2.5rem;
 }
 .text-15{
-	font-size: 1.2rem;
+	font-size: 1rem;
 }
 /* -------------- Top Bar ---------------- */
 .top-bar-w{
@@ -348,7 +348,7 @@ section {
 	}
 	.image-logo{
 		height: 70px; 
-		width: 200px; 
+		width: 250px; 
 		margin: auto; 
 		background-size: cover; 
 		background-position: center;
@@ -378,14 +378,14 @@ section {
 		position: absolute; 
 		z-index: 10;  
 		margin-top: 20px;
-		height: 50px;
+		height: 35px;
 	}
 	.escudo-fif{
 		position: absolute; 
 		z-index: 10; 
 		margin-top: 20px; 
-		margin-left: 50px; 
-		height: 50px;
+		margin-left: 35px; 
+		height: 35px;
 	}
 	.p-name{
 	font-size: 0.9rem;
@@ -399,14 +399,14 @@ section {
 	}
 	.image-logo{
 		height: 140px; 
-		width: 400px;
+		width: 410px;
 		margin: auto; 
 		background-size: cover; 
 		background-position: center;
 	}
 	.text-time{
 		margin-bottom: 0; 
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 	.text-time2{
 		margin-bottom: 0; 
@@ -414,6 +414,12 @@ section {
 	}
 	.text-first{
 		font-size: 1rem;
+	}
+	.text-second{
+		font-size: 2rem;
+	}
+	.text-bottom{
+		font-size: 0.8rem;
 	}
 	.text-15{
 		font-size: 0.9rem;
@@ -440,6 +446,9 @@ section {
 	}
 	.text-hour-program{
 		font-size: 1rem;
+	}
+	.button-register{
+		font-size: 0.7rem;
 	}
 
 }

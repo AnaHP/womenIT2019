@@ -1,6 +1,9 @@
  document.getElementById("buttonIndividual").addEventListener("click", function() {
+ 	var fieldSecond = document.getElementById("formSecond")
+
  	var fieldForm = document.getElementById("formFirst");
  	fieldForm.classList.add("hide");
+ 	fieldSecond.classList.remove("hide");
  	formIndividual();
  });
 
@@ -20,25 +23,52 @@
  	fieldRow1.className = "row align-center";
  	form.appendChild(fieldRow1);
  	var columnLeft = document.createElement("div");
- 	columnLeft.className="small-12 medium-6 columns";
+ 	columnLeft.className="small-12 medium-12 large-12 columns";
  	fieldRow1.appendChild(columnLeft);
+ 	var row1=document.createElement("div");
+ 	row1.className="row";
+ 	columnLeft.appendChild(row1);
+ 	var columnName = document.createElement("div");
+ 	columnName.className="large-6 medium-6 small-12 columns";
+ 	row1.appendChild(columnName);
  	var formGroup1 = document.createElement("div");
  	formGroup1.className="form-group margin-bt-2"
- 	columnLeft.appendChild(formGroup1);
+ 	columnName.appendChild(formGroup1);
  	var labelName = document.createElement("label");
  	labelName.innerHTML ="Nombre";
  	labelName.className="form-label";
  	labelName.setAttribute("for","nameInput");
  	formGroup1.appendChild(labelName);
  	var inputName = document.createElement("input");
- 	inputName.className="form-input";
+ 	inputName.className="form-input margin-bottom-0";
  	inputName.setAttribute("type", "text");
  	inputName.id="nameInput"
  	formGroup1.appendChild(inputName);
 
+
+ 	var columnLastName = document.createElement("div");
+ 	columnLastName.className="large-6 medium-6 small-12 columns";
+ 	row1.appendChild(columnLastName);
+ 	var formGroup5 = document.createElement("div");
+ 	formGroup5.className="form-group margin-bt-2";
+ 	columnLastName.appendChild(formGroup5);
+ 	var labelName = document.createElement("label");
+ 	labelName.innerHTML ="Apellidos";
+ 	labelName.className="form-label";
+ 	labelName.setAttribute("for","lastNameInput");
+ 	formGroup5.appendChild(labelName);
+ 	var inputLastName = document.createElement("input");
+ 	inputLastName.className="form-input margin-bottom-0";
+ 	inputLastName.setAttribute("type", "text");
+ 	inputLastName.id="lastNameInput"
+ 	formGroup5.appendChild(inputLastName);
+
+ 	var columnDate = document.createElement("div");
+ 	columnDate.className="large-6 medium-6 small-12 columns";
+ 	row1.appendChild(columnDate);
  	var formGroup2 = document.createElement("div");
  	formGroup2.className="form-group margin-bt-2"
- 	columnLeft.appendChild(formGroup2);
+ 	columnDate.appendChild(formGroup2);
  	var labelDate = document.createElement("label");
  	labelDate.innerHTML ="Fecha de Nacimiento (aaaa:mm:dd)";
  	labelDate.className="form-label";
@@ -51,9 +81,29 @@
  	inputDate.placeholder = "";
  	formGroup2.appendChild(inputDate);
 
+ 	var columnEmail = document.createElement("div");
+ 	columnEmail.className="large-6 medium-6 small-12 columns";
+ 	row1.appendChild(columnEmail);
+ 	var formGroup6 = document.createElement("div");
+ 	formGroup6.className="form-group margin-bt-2";
+ 	columnEmail.appendChild(formGroup6);
+ 	var labelName = document.createElement("label");
+ 	labelName.innerHTML ="Correo Electrónico";
+ 	labelName.className="form-label";
+ 	labelName.setAttribute("for","emailInput");
+ 	formGroup6.appendChild(labelName);
+ 	var inputLastEmail = document.createElement("input");
+ 	inputLastEmail.className="form-input";
+ 	inputLastEmail.setAttribute("type", "email");
+ 	inputLastEmail.id="emailInput"
+ 	formGroup6.appendChild(inputLastEmail);
+
+ 	var columnInstitution = document.createElement("div");
+ 	columnInstitution.className="large-6 medium-6 small-12 columns";
+ 	row1.appendChild(columnInstitution);
  	var formGroup3 = document.createElement("div");
  	formGroup3.className="form-group margin-bt-2"
- 	columnLeft.appendChild(formGroup3);
+ 	columnInstitution.appendChild(formGroup3);
  	var labelInstitution = document.createElement("label")
  	labelInstitution.className="label-select";
  	labelInstitution.innerHTML="Institución";
@@ -70,62 +120,13 @@
  	// 	selectInstitution.appendChild(el);
  	// }
  	formGroup3.appendChild(selectInstitution);
-
-
- 	// var formGroup4 = document.createElement("div");
- 	// formGroup4.className="form-group margin-bt-2"
- 	// columnLeft.appendChild(formGroup4);
- 	// var labelEvent = document.createElement("label")
- 	// labelEvent.className="label-select";
- 	// labelEvent.innerHTML="¿Cómo te enteraste del evento?";
- 	// formGroup4.appendChild(labelEvent);
- 	// var selectEvent = document.createElement("select");
- 	// selectEvent.className="form-input margin-bottom-0";
- 	// var options = ["Facebook", "Institución", "Otro"];
- 	// for(var i = 0; i < options.length; i++) {
- 	// 	var opt = options[i];
- 	// 	var el = document.createElement("option");
- 	// 	el.textContent = opt;
- 	// 	el.value = opt;
- 	// 	selectEvent.appendChild(el);
- 	// }
- 	// formGroup4.appendChild(selectEvent);
-
- 	var columnRight = document.createElement("div");
- 	columnRight.className="small-12 medium-6 columns";
- 	fieldRow1.appendChild(columnRight);
-
- 	var formGroup5 = document.createElement("div");
- 	formGroup5.className="form-group margin-bt-2";
- 	columnRight.appendChild(formGroup5);
- 	var labelName = document.createElement("label");
- 	labelName.innerHTML ="Apellidos";
- 	labelName.className="form-label";
- 	labelName.setAttribute("for","lastNameInput");
- 	formGroup5.appendChild(labelName);
- 	var inputLastName = document.createElement("input");
- 	inputLastName.className="form-input";
- 	inputLastName.setAttribute("type", "text");
- 	inputLastName.id="lastNameInput"
- 	formGroup5.appendChild(inputLastName);
-
- 	var formGroup6 = document.createElement("div");
- 	formGroup6.className="form-group margin-bt-2";
- 	columnRight.appendChild(formGroup6);
- 	var labelName = document.createElement("label");
- 	labelName.innerHTML ="Correo Electrónico";
- 	labelName.className="form-label";
- 	labelName.setAttribute("for","emailInput");
- 	formGroup6.appendChild(labelName);
- 	var inputLastEmail = document.createElement("input");
- 	inputLastEmail.className="form-input";
- 	inputLastEmail.setAttribute("type", "email");
- 	inputLastEmail.id="emailInput"
- 	formGroup6.appendChild(inputLastEmail);
-
+ 	
+ 	var columnOccupation = document.createElement("div");
+ 	columnOccupation.className="large-6 medium-6 small-12 columns";
+ 	row1.appendChild(columnOccupation);
  	var formGroup7 = document.createElement("div");
  	formGroup7.className="form-group margin-bt-2"
- 	columnRight.appendChild(formGroup7);
+ 	columnOccupation.appendChild(formGroup7);
  	var labelOccupation = document.createElement("label")
  	labelOccupation.className="label-select";
  	labelOccupation.innerHTML="Ocupación";
@@ -142,13 +143,12 @@
  	// 	selectOccupation.appendChild(el);
  	// }
  	formGroup7.appendChild(selectOccupation);
-
- 	var columnCenter = document.createElement("div");
- 	columnCenter.className="large-6 medium-12 small-12 columns";
- 	fieldRow1.appendChild(columnCenter);
+ 	var columnEvent = document.createElement("div");
+ 	columnEvent.className="large-6 medium-6 small-12 columns";
+ 	row1.appendChild(columnEvent);
  	var formGroup4 = document.createElement("div");
  	formGroup4.className="form-group margin-top-0 margin-bt-2"
- 	columnCenter.appendChild(formGroup4);
+ 	columnEvent.appendChild(formGroup4);
  	var labelEvent = document.createElement("label")
  	labelEvent.className="label-select";
  	labelEvent.innerHTML="¿Cómo te enteraste del evento?";
@@ -194,92 +194,94 @@
 //  	labelCheckOnline2.innerHTML="Asistire al evento";
 //  	fieldCheck2.appendChild(labelCheckOnline2);
 
- 	var columnButton = document.createElement("div");
- 	columnButton.className="large-12 columns";
- 	fieldRow1.appendChild(columnButton);
- 	var rowButton = document.createElement("div");
- 	rowButton.className="row align-right";
- 	columnButton.appendChild(rowButton);
- 	var columnButton2 = document.createElement("div");
- 	columnButton2.className="large-3 columns"
- 	rowButton.appendChild(columnButton2);
- 	var buttonBack = document.createElement("a");
- 	buttonBack.className="button link-menu white width-100 margin-bottom-0";
- 	buttonBack.innerHTML="Regresar";
- 	columnButton2.appendChild(buttonBack);
- 	buttonBack.addEventListener("click", function(){
- 		var fieldForm = document.getElementById("formFirst");
- 		fieldForm.classList.remove("hide");
- 		fieldForm.classList.add("show");
- 		var fieldFormSecond = document.getElementById("formSecond")
- 		fieldFormSecond.innerHTML="";
- 	})
- 	var columnButton1=document.createElement("div");
- 	columnButton1.className="large-3 columns";
- 	rowButton.appendChild(columnButton1);
- 	var buttonRegister = document.createElement("a");
- 	buttonRegister.className="button link-menu button-accept width-100 margin-bottom-0";
- 	buttonRegister.innerHTML="Regístrate";
- 	buttonRegister.id="register";
- 	buttonRegister.onclick = registrar;
- 	columnButton1.appendChild(buttonRegister);
- 	animationLabel();
- 	dateInpuntCleave();
- }
+var columnButton = document.createElement("div");
+columnButton.className="large-12 columns padding-bottom-3";
+fieldRow1.appendChild(columnButton);
+var rowButton = document.createElement("div");
+rowButton.className="row align-right";
+columnButton.appendChild(rowButton);
+var columnButton2 = document.createElement("div");
+columnButton2.className="large-3 columns"
+rowButton.appendChild(columnButton2);
+var buttonBack = document.createElement("a");
+buttonBack.className="button link-menu white width-100 margin-bottom-0";
+buttonBack.innerHTML="Regresar";
+columnButton2.appendChild(buttonBack);
+buttonBack.addEventListener("click", function(){
+	var fieldForm = document.getElementById("formFirst");
+	fieldForm.classList.remove("hide");
+	fieldForm.classList.add("show");
+	var fieldFormSecond = document.getElementById("formSecond")
+	fieldFormSecond.innerHTML="";
+	var fieldSecond=document.getElementById("formSecond");
+	fieldSecond.classList.add("hide");
+})
+var columnButton1=document.createElement("div");
+columnButton1.className="large-3 columns";
+rowButton.appendChild(columnButton1);
+var buttonRegister = document.createElement("a");
+buttonRegister.className="button link-menu button-accept width-100 margin-bottom-0";
+buttonRegister.innerHTML="Regístrate";
+buttonRegister.id="register";
+buttonRegister.onclick = registrar;
+columnButton1.appendChild(buttonRegister);
+animationLabel();
+dateInpuntCleave();
+}
 
- function formGroup(){
- 	var fieldForm = document.getElementById("formSecond");
- 	fieldForm.innerHTML = "";
+function formGroup(){
+	var fieldForm = document.getElementById("formSecond");
+	fieldForm.innerHTML = "";
 
- 	var form = document.createElement("form");
- 	form.style="height: 100%;"
- 	fieldForm.appendChild(form);
- 	var fieldRow1 = document.createElement("div");
- 	fieldRow1.className = "row align-center";
- 	form.appendChild(fieldRow1);
- 	var columnLeft = document.createElement("div");
- 	columnLeft.className="small-12 medium-6 columns";
- 	fieldRow1.appendChild(columnLeft);
+	var form = document.createElement("form");
+	form.style="height: 100%;"
+	fieldForm.appendChild(form);
+	var fieldRow1 = document.createElement("div");
+	fieldRow1.className = "row align-center";
+	form.appendChild(fieldRow1);
+	var columnLeft = document.createElement("div");
+	columnLeft.className="small-12 medium-6 columns";
+	fieldRow1.appendChild(columnLeft);
 
- 	var formGroup1 = document.createElement("div");
- 	formGroup1.className="form-group margin-bt-2"
- 	columnLeft.appendChild(formGroup1);
- 	var labelName = document.createElement("label");
- 	labelName.innerHTML ="Nombre del Encargado";
- 	labelName.className="form-label";
- 	labelName.setAttribute("for","nameInput");
- 	formGroup1.appendChild(labelName);
- 	var inputName = document.createElement("input");
- 	inputName.className="form-input";
- 	inputName.setAttribute("type", "text");
- 	inputName.id="nameInput"
- 	formGroup1.appendChild(inputName);
+	var formGroup1 = document.createElement("div");
+	formGroup1.className="form-group margin-bt-2"
+	columnLeft.appendChild(formGroup1);
+	var labelName = document.createElement("label");
+	labelName.innerHTML ="Nombre del Encargado";
+	labelName.className="form-label";
+	labelName.setAttribute("for","nameInput");
+	formGroup1.appendChild(labelName);
+	var inputName = document.createElement("input");
+	inputName.className="form-input";
+	inputName.setAttribute("type", "text");
+	inputName.id="nameInput"
+	formGroup1.appendChild(inputName);
 
- 	var columnRight = document.createElement("div");
- 	columnRight.className="small-12 medium-6 columns";
- 	fieldRow1.appendChild(columnRight);
+	var columnRight = document.createElement("div");
+	columnRight.className="small-12 medium-6 columns";
+	fieldRow1.appendChild(columnRight);
 
- 	var formGroup2 = document.createElement("div");
- 	formGroup2.className="form-group margin-bt-2";
- 	columnRight.appendChild(formGroup2);
- 	var labelInstitutionGroup = document.createElement("label")
- 	labelInstitutionGroup.className="label-select";
- 	labelInstitutionGroup.innerHTML="Institución";
- 	formGroup2.appendChild(labelInstitutionGroup);
- 	var selectInstitutionGroup = document.createElement("select");
- 	selectInstitutionGroup.className="form-input margin-bottom-0";
- 	var options = ["UAQ", "UVM"];
- 	for(var i = 0; i < options.length; i++) {
- 		var opt = options[i];
- 		var el = document.createElement("option");
- 		el.textContent = opt;
- 		el.value = opt;
- 		selectInstitutionGroup.appendChild(el);
- 	}
- 	formGroup2.appendChild(selectInstitutionGroup);
+	var formGroup2 = document.createElement("div");
+	formGroup2.className="form-group margin-bt-2";
+	columnRight.appendChild(formGroup2);
+	var labelInstitutionGroup = document.createElement("label")
+	labelInstitutionGroup.className="label-select";
+	labelInstitutionGroup.innerHTML="Institución";
+	formGroup2.appendChild(labelInstitutionGroup);
+	var selectInstitutionGroup = document.createElement("select");
+	selectInstitutionGroup.className="form-input margin-bottom-0";
+	var options = ["UAQ", "UVM"];
+	for(var i = 0; i < options.length; i++) {
+		var opt = options[i];
+		var el = document.createElement("option");
+		el.textContent = opt;
+		el.value = opt;
+		selectInstitutionGroup.appendChild(el);
+	}
+	formGroup2.appendChild(selectInstitutionGroup);
 
- 	var rowData = document.createElement("div");
- 	rowData.className="row";
+	var rowData = document.createElement("div");
+	rowData.className="row";
  	// rowData.style="height: calc(100% - 11rem";
  	form.appendChild(rowData);
  	var fieldTitleGroup = document.createElement("div");

@@ -82,7 +82,7 @@
 							</div>
 						</div> -->
 						<div class="row text-center align-center">
-							<div class="large-9 small-12 columns">
+							<div class="large-9 medium-9 small-12 columns">
 								<div class="row">
 									<div class="large medium small columns">
 										<p class="white-color text-time" id="days"></p>
@@ -131,14 +131,14 @@
 					</div>
 					<div class="large-12 medium-12 small-12 columns text-center">
 						<div class="row">
-							<div class="large-2 large-offset-5 medium-4 medium-offset-4 small-4 small-offset-4 columns padding-rl-0">
+							<div class="large-2 large-offset-5 medium-4 medium-offset-4 small-6 small-offset-3 columns padding-rl-0">
 								<a class="button button-register white width-100 margin-bottom-0" href="#register">¡Regístrate Ahora!</a>
 							</div>
 						</div>
 
 					</div>
 					<div class="large-10 medium-10 small-10 columns text-center">
-						<p class="white-color text-15 text-bottom margin-0">13 de marzo de 2019 | Centro de Negocios de la Universidad Autónoma de Querétaro</p>
+						<p class="white-color text-bottom margin-0">13 de marzo de 2019 | Centro de Negocios de la Universidad Autónoma de Querétaro</p>
 					</div>
 				</div>
 			</div>
@@ -246,7 +246,7 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Dra. Juana Elizabeth Elton</p>
-											<p class="margin-0 p-name">Facultad de Ciencias Naturales</p>
+											<p class="margin-0 p-name">Directora de la Facultad de Ciencias Naturales</p>
 
 										</div>
 									</div>
@@ -256,7 +256,7 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Lic. Laura Pérez Tellez</p>
-											<p class="margin-0 p-name">Facultad de Lenguas y Letras</p>
+											<p class="margin-0 p-name">Directora de la Facultad de Lenguas y Letras</p>
 										</div>
 									</div>
 									<div class="row padding-vertical-1">
@@ -265,7 +265,7 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Dra. en C. P. S. Marcela Ávila Eggleton</p>
-											<p class="margin-0 p-name">Facultad de Ciencias Políticas y Sociales</p>
+											<p class="margin-0 p-name">Directora de la Facultad de Ciencias Políticas y Sociales</p>
 
 										</div>
 									</div>
@@ -275,7 +275,7 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Dra. Silvia Lorena Amaya Llano</p>
-											<p class="margin-0 p-name">Facultad de Química</p>
+											<p class="margin-0 p-name">Directora de la Facultad de Química</p>
 
 										</div>
 									</div>
@@ -285,7 +285,16 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Dra. Ma. Margarita Espinoza Blas</p>
-											<p class="margin-0 p-name">Facultad de Filosofía</p>
+											<p class="margin-0 p-name">Directora de la Facultad de Filosofía</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>guadalupe.jpeg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">M.C.E Ma. Guadalupe Perea Ortiz</p>
+											<p class="margin-0 p-name">Directora de la Facultad de Enfermería</p>
 										</div>
 									</div>
 									<div class="row padding-vertical-1">
@@ -293,8 +302,8 @@
 											<div class="background-image" style="background-image: url(<?=IMG?>user-female.jpg);"></div>
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
-											<p class="margin-0 blue-color p-name">M.C.E Ma. Guadalupe Perea Ortiz</p>
-											<p class="margin-0 p-name">Facultad de Enfermería</p>
+											<p class="margin-0 blue-color p-name">Dra. Guadalupe Zaldívar Lelo de Larrea</p>
+											<p class="margin-0 p-name">Directora de la Facultad de Medicina</p>
 										</div>
 									</div>
 								</div>
@@ -424,7 +433,7 @@
 			</div>
 		</div>
 
-		<div id="formSecond" style="height: calc(100% - 11.8rem"></div>
+		<div id="formSecond" class="hide" style="height: calc(100% - 11.8rem"></div>
 
 
 
