@@ -41,44 +41,47 @@ function registrar(){
   /*var grupo = $("#grupoInput).val(); -> grupos en el que se*/
       if (checkEmpty($("#nameInput")) || checkEmpty($("#lastNameInput")) || checkEmpty($("#dateInput")) || checkEmpty($("#emailInput")) || checkEmpty($("#occupationInput")) || checkEmpty($("#institutioninput")) || checkEmpty($("#eventInput"))) {
         notificacion_("Revisa los campos faltantes", "Completar campos");
+        $("#register").attr( "disabled", false );
+        $("#register").attr("onclick", "registrar()");
+
         return null;
       }
       if (!validateMail($("#correo"))) {
         notificacion_("Ingresa un correo válido", "Verifica");
         return null;
       }
-      
+
       boton.innerHTML = 'REGISTRANDO...';
       $.ajax({
         url:config.url+'Index/registro',
         type:'POST',
         data:{nombre:nombre, apellidos:apellidos, fechaNacimiento:fechaNac, correo:correo, rol:rol, institucion:insti, informacion:info},
         success: function(data){
-        console.log(data);
+        // console.log(data);
           switch(parseInt(data)){
             case 4:
               notificacion_("Correo ya registrado", "Verifica");
-              boton.disabled=false;
-              boton.innerHTML = 'REGISTRAR';
+              $("#register").attr( "disabled", false );
+              $("#register").attr("onclick", "registrar()");
               break;
             case 3:
               notificacion_("Ingresa un correo válido", "Verifica");
-              boton.disabled=false;
-              boton.innerHTML = 'REGISTRAR';
+              $("#register").attr( "disabled", false );
+              $("#register").attr("onclick", "registrar()");
               break;
             case 1:
-              notificacion_( "Revisa tu correo para confirmar tu registro, llegará en máximo 24hrs.", "Registro exitoso");
+              notificacion_( "Revisa tu bandeja de entrada para confirmar tu correo, llegará en máximo 24hrs.", "Registro exitoso");
               setTimeout(function(){location.reload(); },4000);
               break;
             case 0:
               notificacion_( "Error general", "Intenta más tarde");
-              boton.disabled=false;
-              boton.innerHTML = 'REGISTRAR';
+              $("#register").attr( "disabled", false );
+              $("#register").attr("onclick", "registrar()");
               break;
             default:
                notificacion_( "Error", "Intenta más tarde");
-               boton.disabled=false;
-               boton.innerHTML = 'REGISTRAR';
+               $("#register").attr( "disabled", false );
+               $("#register").attr("onclick", "registrar()");
               break;
           }
         }

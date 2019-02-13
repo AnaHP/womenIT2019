@@ -28,7 +28,7 @@
   <div class="logos">
       <img src="<?=IMG?>uaq.png">
       <img src="<?=IMG?>fif.png">
-      <img src="<?=IMG?>logo.png" alt="">
+      <img src="<?=IMG?>Logo.png" alt="">
    </div>
 
    <div class="error">

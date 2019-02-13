@@ -1,0 +1,1028 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Century Gothic', 'Hind', sans-serif;
+	text-transform: uppercase;
+	cursor: default;
+	scroll-behavior: smooth;
+}
+/*estilos de alerta*/
+.bg{
+	width: 100%;
+	height: 100%;
+	float: left;
+	position: fixed;
+	background: rgba(0,0,0,.5);
+	z-index: 9999999;
+	display: none;
+	justify-content: center;
+}
+	.ver-bg{
+		display: block !important;
+	}
+
+	.ventana, .ventana{
+		width: 80%;
+		/*height: 140px;*/
+		float: left;
+		position: fixed;
+		background: -webkit-linear-gradient(250deg, #644D74, #9175A4);
+		z-index: 9999999;
+		margin-left: 10%;
+		/*left: -25%;*/
+		/* display: none; */
+		padding: 10px;
+		padding-right: 20px;
+		padding-left: 20px;
+		box-sizing: border-box;
+		text-align: center;
+		color: white;
+		border-radius: 5px;
+		box-shadow: 0px 2px 18px 0px rgba(0,0,0,.7);
+		top: -100%;
+		transition: .9s ease-in-out;
+
+	}
+
+		.ver-ventana{
+			display: block !important;
+		}
+
+		.ventana>h2, .ventana>h2{
+			margin-top: 8px;
+			margin-bottom: 8px;
+			color: #F5C478 !important;
+		}
+/*fin estilos de alerta*/
+
+.verprogra{
+	top: 0px !important;
+}
+.vermain{
+	top: -100% !important;
+}
+body{
+	/*background:  ;*/
+	background: url(../img/stars1.png) rgba(54,61,79,1) ;
+	background-attachment: fixed;
+	background-size: 30%;
+	overflow-x: hidden;
+	animation-name: estrellas;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+
+}
+
+.main{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 400px;
+	display: block;
+	transition: .3s all;
+	/*background-position: center center;*/
+}
+
+	@keyframes estrellas{
+		0%{background-position:0% 0%}
+		50%{background-position: 0% 20%}
+		100%{background-position: 0% 0%}
+	}
+
+.logos{
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	padding-left: 20px;
+	/*padding-right: 5%;*/
+	padding-top: 30px;
+	top: 0px;
+	left: 0px;
+	box-sizing: border-box;
+}
+
+	.logos>img{
+		height: 100%;
+
+	}
+
+	.fecha{
+		width: 700px;
+		left: calc(50% - 350px);
+		position: absolute;
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		font-size: 1.4em;
+		position: absolute;
+		margin-top: 200px;
+	}
+
+
+.lugar{
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	bottom: 20px;
+	margin-bottom: 10px;
+}
+
+	.lugar>.texto{
+		width: 90%;
+		height: 100%;
+		text-align: center;
+		/*background: red;*/
+		float: left;
+		position: relative;
+		padding-left: 10%;
+		box-sizing: border-box;
+	}
+		.texto>h3{
+			margin-left: none !important;
+			color: rgba(255,255,255,.6);
+			font-size: .9em;
+			margin-top: 15px;
+		}
+
+	.lugar>.troya{
+		width: 10%;
+		height: 100%;
+		/*background: blue;*/
+		float: left;
+		position: relative;
+		text-align: center;
+	}
+		.troya>img{
+			height: 100px;
+			/*float: left;*/
+		}
+
+
+
+.programa{
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: 100px;
+	display: block;
+	transition: .3s all;
+}
+
+
+
+.circulo-a{
+	background: rgba(152,94,156,.2);
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	left: calc(50% - 250px);
+	border-radius: 50%;
+	top: 100px;
+	transform:scale(.1);
+	opacity: 0;
+	transition: 1s all;
+	animation-name: pulso;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulso {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+.circulo-b{
+	background: rgba(152,94,156,.2);
+	width: 375px;
+	height: 375px;
+	position: absolute;
+	border-radius: 50%;
+	margin-left: calc(50% - 186px);
+	float: left;
+	top: 162.5px;
+	transform:scale(.1);
+	opacity: 0;
+	transition: 1s all;
+	animation-name: pulso;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+}
+
+.circulo-c{
+	background: rgba(152,94,156,.2);
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	border-radius: 50%;
+	left: calc(50% - 130px);
+	float: left;
+	text-align: center;
+	top: 225px;
+	transform:scale(.1);
+	opacity: 0;
+	transition: 1s all;
+	animation-name: pulso;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-delay: 1.5s;
+}
+
+	.logo{
+		position: absolute;
+		width: 700px;
+		left: calc(50% - 350px);
+		margin-top: 100px;
+		transform: scale(1.5);
+		opacity: 0;
+		transition: 1s all;
+	}
+
+
+.botonera{
+	width: 400px;
+	position: absolute;
+	bottom: 100px;
+	left: calc(50% - 195px);
+	margin-top: 50px;
+}
+
+	.botonera>button{
+		height: 40px;
+		width: 180px;
+		font-size: 1.3em;
+		line-height: 40px;
+		float: left;
+		margin-right: 20px;
+		border: 2px solid rgba(255,184,247,.3);
+		background: transparent;
+		color: rgba(255,184,247,.3);
+		outline: none;
+		border-radius: 20px;
+		cursor: pointer;
+		transition: .2s all;
+	}
+	.botonera a{
+		width: 100%;
+		height: 100%;
+		float: left;
+		position: relative;
+		background: none;
+		border-radius: 20px;
+		text-decoration: none;
+		color: rgba(255,184,247,.3);
+		cursor: pointer;
+	}
+
+	.botonera>button:hover{
+		border: 2px solid rgba(255,184,247,.9);
+		color: rgba(255,184,247,.9);
+	}
+
+
+.programa>h1{
+	text-align:center;
+	font-size:4em;
+	color: white;
+	margin-top: 150px;
+	margin-bottom: 30px;
+}
+
+
+.programa>h2{
+	text-align:center;
+	font-size:4em;
+	color: white;
+	float: left;
+	width: 100%;
+	margin-top: 150px;
+	margin-bottom: 40px;
+}
+.programa>h3{
+	text-align:center;
+	color: white;
+	float: left;
+	width: 100%;
+	font-size: 1.5em;
+	color: rgba(255,255,255,.6);
+}
+	.programa>p{
+		font-size: 1.5em;
+		width: 50%;
+		margin-left: 25%;
+		float: left;
+		text-align: center;
+		color: rgba(255,255,255,.6);
+	}
+
+
+	/*======================================== CODIGO SHAROL FER*/
+
+
+.hora{
+    width: 90%;
+    margin-left: 5%;
+    max-height: 12000px;
+    min-height: 250px;
+    float: left;
+    position: relative;
+    background: rgba(76,86,112,1);
+    border-radius: 4px;
+    margin-top: 30px;
+    box-shadow: -1px 2px 3px 0px rgba(0,0,0,0.3);
+
+  }
+    .color{
+      width: 120px;
+      /*min-height: 250px;*/
+      position: absolute;
+      background-color: #F16C7F;
+      text-align: center;
+      float: left;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      white-space: nowrap;
+    }
+	    .color>p{
+	      font-size: 3em;
+	      text-align: center;
+	      font-weight: bold;
+	      color: white !important;
+	      vertical-align: middle;
+	      text-align: center;
+	      margin-top: 10px;
+	      display: inline-block;
+
+	    }
+
+    .info{
+      width: calc(100% - 120px);
+      height: 110px;
+      position: relative;
+      font-size: .85em;
+      text-align: center;
+      display: table;
+      margin-left:120px;
+    }
+
+	    .info>h1{
+	      height: 100%;
+	      font-size: 3em;
+	      text-align: left;
+	      padding-left: 20px;
+	      display: table-cell;
+	      vertical-align: middle;
+	      color: #F16C7F !important;
+	      border-bottom: 1px solid rgba(255,255,255,.2);
+	    }
+
+	.panel{
+		height: 400px !important;
+	}
+
+    .conferencista{
+    	width: calc(100% - 120px);
+    	float: left;
+    	min-height: 100px;
+    	margin-left: 120px;
+    	margin-top: 20px;
+    }
+
+	    .conf{
+	      width: 70px;
+	      height: 70px;
+	      position: relative;
+	      float: left;
+	      margin-top: 15px;
+	      margin-left: 20px;
+	      border-radius: 50%;
+	      border: 2px solid #F5C478;
+	      overflow: hidden;
+	    }
+
+      	.conf>img{
+        	max-height: 100%;
+      }
+
+    .info2{
+    	width: calc(100% - 150px);
+    	margin-left: 20px;
+    	float: left;
+    	position: relative;
+    	font-size: .8em;
+     	box-sizing: border-box;
+    }
+    	.info2>h3{
+    		font-weight: lighter;
+    		color: white;
+    		margin-bottom: 13px;
+    	}
+
+    	.info2>.extra{
+    		font-size: .9em;
+    		color: white;
+    	}
+
+    	.bold{
+    		font-weight: lighter !important;
+    		font-size: 1.7em;
+    		color: rgba(255,184,247,1) !important;
+    		margin-top: 15px;
+    	}
+
+    	.puesto{
+    		text-transform: none;
+    	}
+
+    	.contacto{
+    		color: rgba(0,255,206,1) !important;
+    		font-size: 1em;
+    		text-transform: none !important;
+    	}
+
+.entrada{
+	width: 90%;
+	text-align: center;
+	float: left;
+	margin-left: 5%;
+	margin-top: 10px;
+}
+
+	.entrada h3{
+		color: white;
+		margin-top: 20px;
+		font-size: 1.3em;
+		margin-bottom: 15px
+	}
+
+	.entrada input{
+		width: 60%;
+		margin-left: 20%;
+		float: left;
+		height: 40px;
+		text-align: center;
+		font-size: 1.2em;
+		border:none;
+		outline: none;
+		background:rgba(0,0,0,.2);
+		border-radius: 5px;
+		color: rgba(255,184,247,1);
+		text-transform: none;
+	}
+
+	.entrada input[type="text"]{
+		cursor: auto;
+	}
+
+	input[type=date]::-webkit-outer-spin-button, input[type=date]::-webkit-inner-spin-button {
+	    -webkit-appearance: none;
+	    margin: 0;
+	}
+
+	.entrada button{
+		background: #F16C7F;
+		color: white;
+		border:none;
+		border-radius: 5px;
+		height: 40px;
+		font-size: 1.3em;
+		padding:0px 50px;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		outline: none;
+		cursor: pointer !important;
+	}
+
+	.entrada select{
+		width: 60%;
+		margin-left: 20%;
+		float: left;
+		height: 40px;
+		text-align: center !important;
+		font-size: 1.2em;
+		border:none;
+		outline: none;
+		background:rgba(0,0,0,.2);
+		border-radius: 5px;
+		color: rgba(255,184,247,1);
+		cursor: pointer !important;
+	}
+
+	.entrada option{
+		color: #363D4F;
+		text-align: center;
+		cursor: pointer !important;
+	}
+
+
+.color b{
+	font-size: .5em !important;
+	opacity: .5;
+}
+
+.color:before {
+	  content: '';
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;
+	  margin-right: -0.25em; /* Adjusts for spacing */
+	}
+
+
+@media only screen and (max-width: 500px) {
+    .hora .p{
+    	/*max-height: 800px !important;*/
+    }
+    .p{
+    	max-height: 1200px;
+    }
+
+    .circulo-a,.circulo-b,.circulo-c{
+    	top: -150px;
+    }
+
+    .fecha{
+    	margin-top: 130px;
+    	font-weight: lighter;
+    }
+
+    .logo{
+		position: absolute;
+		width: 300px;
+		left: calc(50% - 150px);
+		margin-top: 100px;
+		transform: scale(1.5);
+		opacity: 0;
+		transition: 1s all;
+	}
+
+	.botonera>button{
+		height: 40px;
+		width: 90%;
+		margin-left: 5%;
+		font-size: 1.3em;
+		margin-bottom: 10px;
+		line-height: 40px;
+		float: left;
+		margin-right: 20px;
+		border: 2px solid rgba(255,184,247,.3);
+		background: transparent;
+		color: rgba(255,184,247,.3);
+		outline: none;
+		border-radius: 20px;
+		cursor: pointer;
+		transition: .2s all;
+	}
+
+	.lugar>.troya{
+		width: 100%;
+	}
+
+	.color{
+      width: 50px;
+      min-height: 200px;
+      height: 100%;
+      float: left;
+      position: absolute;
+      background-color: #F16C7F;
+      /*display: table;*/
+      top: 0px;
+      left: 0px;
+      white-space: nowrap;
+      text-align: center;
+    }
+
+    .color:before {
+	  content: '';
+	  display: inline-block;
+	  height: 100%;
+	  vertical-align: middle;
+	  margin-right: -0.25em; /* Adjusts for spacing */
+	}
+	    .color>p{
+	      font-size: 2em;
+	      text-align: center;
+	      font-weight: bold;
+	      color: white !important;
+	      /*display: table-cell;*/
+	      vertical-align: middle;
+	      text-align: center;
+	      display: inline-block;
+	    }
+
+    .info{
+      width: calc(100% - 50px);
+      height: 100px;
+      position: relative;
+      font-size: .9em;
+      text-align: center;
+      padding-top: 10px;
+      box-sizing: border-box;
+      display: table;
+      margin-left:50px;
+    }
+
+	    .info>h1{
+	      height: 100%;
+	      font-size: 1.5em;
+	      text-align: left;
+	      padding-left: 10px;
+	      display: table-cell;
+	      vertical-align: middle;
+	      color: #F16C7F !important;
+	      border-bottom: 1px solid rgba(255,255,255,.2);
+	    }
+
+	.conferencista{
+    	width: calc(100% - 50px);
+    	float: left;
+    	min-height: 100px;
+    	margin-left: 50px;
+    	margin-top: 0px !important;
+    }
+
+	    .conf{
+	      width: 40px;
+	      height: 40px;
+	      position: relative;
+	      float: left;
+	      margin-top: 15px;
+	      margin-left: 10px;
+	      border-radius: 50%;
+	      border: 2px solid #F5C478;
+	      overflow: hidden;
+	    }
+
+      	.conf>img{
+        	max-height: 100%;
+    }
+    .info2{
+    	width: calc(100% - 150px);
+    	margin-left: 20px;
+    	float: left;
+    	position: relative;
+    	font-size: .8em;
+     	box-sizing: border-box;
+    }
+    	.info2>h3{
+    		font-weight: lighter;
+    		color: white;
+    		margin-bottom: 10px;
+    		font-size: 1em;
+    	}
+
+    	.bold{
+    		font-weight: lighter !important;
+    		font-size: 1em;
+    		color: rgba(255,184,247,1) !important;
+    		margin-top: 15px;
+    	}
+
+
+    	.contacto{
+    		color: rgba(0,255,206,1) !important;
+    		font-size: 1em;
+    	}
+
+    	.programa>h2 {
+		    text-align: center;
+		    font-size: 3em;
+		    color: white;
+		    float: left;
+		    width: 100%;
+		    margin-top: 150px;
+		    margin-bottom: 40px;
+		}
+
+		.programa>h1 {
+		    text-align: center;
+		    font-size: 3em;
+		    color: white;
+		    margin-top: 150px;
+		    margin-bottom: 150px;
+		}
+
+		.programa>p {
+		    font-size: 1.1em;
+		    width: 90%;
+		    margin-left: 5%;
+		    float: left;
+		    text-align: center;
+		    color: rgba(255,255,255,.6);
+		}
+
+		.mini .color>p{
+			font-size: 1.3em !important;
+		}
+
+	.entrada input, .entrada select{
+		width: 80%;
+		margin-left: 10%;
+		float: left;
+		height: 50px;
+		text-align: center;
+		font-size: 1.2em;
+		border:none;
+		outline: none;
+		background:rgba(0,0,0,.2);
+		border-radius: 5px;
+		color: rgba(255,184,247,1);
+		text-transform: none;
+	}
+
+	.lugar>.troya{
+		width: 100%;
+		float: left;
+		position: relative;
+		text-align: center;
+	}
+		.troya>img{
+			height: 70px;
+			/*float: left;*/
+		}
+
+	.logos{
+		width: 100%;
+		height: 100px;
+		position: absolute;
+		padding-top: 30px;
+		top: 0px;
+		left: 0px;
+		text-align: center;
+		box-sizing: border-box;
+	}
+
+		.logos>img{
+			height: 100%;
+		}
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	bottom: 0px;
+	position: absolute;
+	float: left;
+	background: rgba(0,0,0,.3);
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+
+}
+	footer>h2{
+		color: rgba(255,255,255,0.8);
+		text-transform: none !important;
+		margin-bottom: 4px;
+		font-weight: lighter;
+		font-size: .9em;
+	}
+	footer>p{
+		color: rgba(255,255,255,0.8);
+		text-transform: none !important;
+	}
+
+.mini{
+	min-height: 110px;
+}
+
+.mini .color{
+	max-height: 150px;
+	min-height:150px;
+}
+
+.mini .color>p{
+	font-size: 2em;
+}
+
+.mini .info{
+	height: 150px;
+}
+
+.color{
+	border-radius: 5px 0px 0px 5px;
+}
+/* ---------------ADMINISTRADOR-------------- */
+.encabezado{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	float: left;
+}
+	.encabezado>img{
+		height: 100%;
+		padding-left: 5%;
+	}
+.totalAsist{
+	width: 100%;
+	position: relative;
+	float: left;
+	height: 220px;
+}
+	.totalAsist>h1{
+		color:#F16C7F;
+		text-align: center;
+		font-size: 9em;
+	}
+	.totalAsist>p{
+		text-align: center;
+		color:#F5C478;
+		font-size: 1.5em;
+	}
+.estadisticas{
+	width: 100%;
+	position: relative;
+	float: left;
+	height: 180px;
+}
+	.estadisticasSep{
+		width: 24.33%;
+		height: 100%;
+		position: relative;
+		float: left;
+	}
+	.estadisticasSep>p{
+		text-align: center;
+		color:#fff;
+		font-size: 2em;
+		margin-top:40px;
+	}
+	.estadisticasSep h2{
+		width: 100%;
+		text-align: center;
+		color:#fff;
+		font-size: 1em;
+		font-weight: 100;
+	}
+	.barra{
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+		margin-top: 10px;
+		height: 15px;
+		border-radius: 15px;
+		position: relative;
+		float: left;
+		text-align: center;
+		background:rgba(70,70,95,1);
+		margin-bottom:10px;
+		overflow: hidden;
+	}
+		.barrita{
+			height: 100%;
+			width: 0;
+			background: #11D9B9;
+			border-radius: 15px;
+			transition: width 1.20s ease-in-out;
+		}
+.datosAsis{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	float: left;
+	margin-top:20px;
+}
+.datosAsis>.fas{
+	color:rgba(255,184,247,.3);
+	position: relative;
+	float: left;
+	margin-left: 40%;
+}
+	.datosAsis>input{
+		margin-top: 20px;
+		margin-bottom: 60px;
+		width: 60%;
+		margin-left: 20%;
+		float: left;
+		height: 40px;
+		text-align: center;
+		font-size: 1.2em;
+		border:none;
+		outline: none;
+		background:rgba(0,0,0,.2);
+		border-radius: 5px;
+		color: rgba(255,184,247,1);
+		text-transform: none;
+	}
+	.cantidad{
+		height: 80px;
+    float: left;
+    position: relative;
+    text-align: center;
+    color: #fff;
+		margin-left: 25%;
+    width: 50%;
+	}
+	.datosAsis>table{
+		width: 80%;
+		margin-left: 10%;
+		border-collapse: collapse;
+	}
+	#primero{
+		border-bottom: 1px solid rgba(255,255,255,.4);
+		color: #F5B3F0;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	table tr{
+		font-size: 1em;
+		color:rgba(255,255,255,.7);
+		font-weight: lighter;
+	}
+	tr:nth-child(even){
+		background-color: rgba(0,0,0,.10);
+	}
+	table td{
+		padding: .4em;
+		text-align: center;
+		font-size: .8em;
+	}
+	table button{
+		background: #F48FB1;
+		color: white;
+		border:none;
+		border-radius: 5px;
+		height: 20px;
+		font-size: .8em;
+		width: 100px;
+		outline: none;
+		cursor: pointer !important;
+	}
+.menu{
+	width: 100%;
+	position: relative;
+	float: left;
+	height: 300px;
+}
+	.menu>.botonera2{
+		width: 400px;
+		height: 100%;
+		position: relative;
+		float: left;
+		left: calc(50% - 195px);
+		margin-top: 50px;
+	}
+	.botonera2>button{
+		margin-top: 20px;
+		height: 40px;
+		width: 180px;
+		font-size: 1.3em;
+		line-height: 40px;
+		float: left;
+		margin-right: 20px;
+		border: 2px solid rgba(255,184,247,.3);
+		background: transparent;
+		color: rgba(255,184,247,.3);
+		outline: none;
+		border-radius: 20px;
+		cursor: pointer;
+		transition: .2s all;
+	}
+	.botonera2 a{
+		width: 100%;
+		height: 100%;
+		float: left;
+		position: relative;
+		background: none;
+		border-radius: 20px;
+		text-decoration: none;
+		color: rgba(255,184,247,.3);
+		cursor: pointer;
+	}
+/* --------------------------ERROR------------------------------ */
+.error{
+	width: 70%;
+	margin-left: 15%;
+	border-radius: 10px;
+	height: 300px;
+	position: relative;
+	float: left;
+	margin-top: calc(25% - 150px);
+	background:rgba(0,0,0,.2);
+}
+	.error>h1{
+		width: 100%;
+		position: relative;
+		float: left;
+		text-align: center;
+		font-size: 6em;
+		margin-top: 50px;
+		color:#E5667B;
+	}
+	.error>h2{
+		width: 100%;
+		position: relative;
+		float: left;
+		text-align: center;
+		font-size: 3em;
+		color: #E4A9E2;
+	}
+.aplicada{
+	background: #EC407A;
+	cursor: default !important;
+}

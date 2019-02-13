@@ -152,6 +152,21 @@ class Controller {
         return $mail->Send();
     }
 
+    public function generateQR($idUser, $code){
+      require_once './libs/phpqrcode/qrlib.php';
+      $PNG_TEMP_DIR ='QR/wsxcfr/';
+      $PNG_WEB_DIR = 'temp/';
+
+      if (!file_exists($PNG_TEMP_DIR))
+          mkdir($PNG_TEMP_DIR);
+
+      $errorCorrectionLevel = 'H';
+      $matrixPointSize = 10;
+      $filename = $PNG_TEMP_DIR.'QR'.md5($idUser."@".$code.'|'.$errorCorrectionLevel.'|'.$matrixPointSize).'.png';
+      QRcode::png($idUser."@".$code, $filename, $errorCorrectionLevel, $matrixPointSize, 2);
+      return $filename;
+    }
+
     /**
      * @author Enrique Aguilar Orozco
      * [comprimirImagenAndUpload description]
