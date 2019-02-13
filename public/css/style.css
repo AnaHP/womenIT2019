@@ -109,6 +109,9 @@ body{
 	z-index: 2;
 	box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.65) !important;
 }
+.sticky{
+	top: 0 !important;
+}
 .link-menu{
 	color: var(--general-pink) !important;
 }
@@ -117,7 +120,24 @@ body{
 }
 
 /* -------------- Home ---------------- */
-
+.image-logo{
+	height: 265px; 
+	width: 700px; 
+	margin: auto; 
+	background-size: cover; 
+	background-position: center;
+}
+.text-time{
+	margin-bottom: 0; 
+	font-size: 4rem;
+}
+.text-first{
+	font-size: 2rem;
+}
+.text-time2{
+	margin-bottom: 0; 
+	font-size: 1.8rem;
+}
 .button-accept{
 	background: #283A53 !important;
 	color: white !important;
@@ -251,7 +271,6 @@ section {
 	left: 0 !important;
 	top: 10px !important;
 	color: #999 !important;
-	z-index: 10 !important;
 	transition: transform 150ms ease-out, font-size 150ms ease-out !important;
 	background: transparent !important;
 }
@@ -288,4 +307,105 @@ section {
 .form-input.filled {
 	box-shadow: 0 2px 0 0 var(--general-pink) !important;
 	background: transparent;
+}
+
+
+
+@media only screen and (max-width: 40em) { 
+	.text-25{
+		font-size: 2rem;
+	}
+	.image-logo{
+		height: 70px; 
+		width: 200px; 
+		margin: auto; 
+		background-size: cover; 
+		background-position: center;
+	}
+	.text-time{
+		margin-bottom: 0; 
+		font-size: 2rem;
+	}
+	.text-time2{
+		margin-bottom: 0; 
+		font-size: 1rem;
+	}
+	.text-first{
+	font-size: 1rem;
+}
+.text-15{
+	font-size: 0.8rem;
+}
+.background-image{
+	background-size: cover;
+	background-position: center;
+	height: 40px;
+	width:40px;
+	border-radius: 50%;
+}
+}
+
+/* min-width 641px and max-width 1024px*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.text-25{
+		font-size: 2rem;
+	}
+	.image-logo{
+	height: 140px; 
+		width: 400px;
+		margin: auto; 
+		background-size: cover; 
+		background-position: center;
+	}
+	.text-time{
+		margin-bottom: 0; 
+		font-size: 2rem;
+	}
+	.text-time2{
+		margin-bottom: 0; 
+		font-size: 1rem;
+	}
+	.text-first{
+	font-size: 1.5rem;
+}
+.text-15{
+	font-size: 0.9rem;
+}
+
+}
+
+/* min-width 1025px and max-width 1440px*/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+	.text-25{
+		font-size: 2rem;
+	}
+	.image-logo{
+		height: 140px; 
+		width: 500px; 
+		margin: auto; 
+		background-size: cover; 
+		background-position: center;
+	}
+	.text-time{
+		margin-bottom: 0; 
+		font-size: 2rem;
+	}
+	.text-time2{
+		margin-bottom: 0; 
+		font-size: 1rem;
+	}
+
+}
+
+
+
+
+
+/* min-width 1441px and max-width 1920px*/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
+
+}
+
+/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) { 
 }

@@ -144,7 +144,7 @@
  	formGroup7.appendChild(selectOccupation);
 
  	var columnCenter = document.createElement("div");
- 	columnCenter.className="large-6 columns";
+ 	columnCenter.className="large-6 medium-12 small-12 columns";
  	fieldRow1.appendChild(columnCenter);
  	var formGroup4 = document.createElement("div");
  	formGroup4.className="form-group margin-top-0 margin-bt-2"
@@ -166,17 +166,34 @@
  	// }
  	formGroup4.appendChild(selectEvent);
  	var columnCheck = document.createElement("div");
- 	columnCheck.className="large-6 columns";
+ 	columnCheck.className="large-6 medium-12 small-12 columns";
  	fieldRow1.appendChild(columnCheck);
- 	var legendCheck = document.createElement("legend");
- 	legendCheck.innerHTML="Será en línea o asistir"
- 	columnCheck.appendChild(legendCheck);
- 	var checkOnline = document.createElement("input");
- 	checkOnline.setAttribute("type", "radio");
- 	columnCheck.appendChild(checkOnline);
- 	var labelCheckOnline = document.createElement("label");
- 	labelCheckOnline.innerHTML="En línea";
- 	checkOnline.appendChild(labelCheckOnline);
+//  	var fieldsetCheck = document.createElement("fieldset");
+//  	columnCheck.appendChild(fieldsetCheck);
+//  	var legendCheck = document.createElement("legend");
+//  	legendCheck.innerHTML="Será en línea o asistir"
+//  	fieldsetCheck.appendChild(legendCheck);
+//  	var fieldCheck1 = document.createElement("div");
+//  	fieldCheck1.className="field-check";
+//  	fieldsetCheck.appendChild(fieldCheck1);
+//  	var checkOnline = document.createElement("input");
+//  	checkOnline.setAttribute("type", "checkbox");
+//  	checkOnline.setAttribute("name", "linea");
+//  	fieldCheck1.appendChild(checkOnline);
+//  	var labelCheckOnline = document.createElement("label");
+//  	labelCheckOnline.innerHTML="En línea";
+//  	fieldCheck1.appendChild(labelCheckOnline);
+// var fieldCheck2 = document.createElement("div");
+//  	fieldCheck2.className="field-check";
+//  	columnCheck.appendChild(fieldCheck2);
+//  	var checkOnline2 = document.createElement("input");
+//  	checkOnline2.setAttribute("type", "checkbox");
+//  	checkOnline2.setAttribute("name", "asistir");
+//  	fieldCheck2.appendChild(checkOnline2);
+//  	var labelCheckOnline2 = document.createElement("label");
+//  	labelCheckOnline2.innerHTML="Asistire al evento";
+//  	fieldCheck2.appendChild(labelCheckOnline2);
+
  	var columnButton = document.createElement("div");
  	columnButton.className="large-12 columns";
  	fieldRow1.appendChild(columnButton);
@@ -364,7 +381,7 @@
 
  function addPerson(){
  	var buttonAddPast = document.querySelector(".buttonAdd");
- 	  buttonAddPast.parentNode.removeChild(buttonAddPast);
+ 	buttonAddPast.parentNode.removeChild(buttonAddPast);
 
 
  	var fieldDataGroup = document.createElement("div");

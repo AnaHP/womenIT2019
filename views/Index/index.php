@@ -32,12 +32,13 @@
 				</div>
 				<div class="top-bar-right">
 					<ul class="menu white">
-						<li><a class="link-menu" href="#">Programa</a></li>
-						<li><a class="link-menu" href="#">Multimedia</a></li>
-						<li><a class="link-menu" href="#">Registro</a></li>
-						<li><a class="link-menu" href="#">Patrocinadores</a></li>
-						<li><a class="link-menu" href="#">FAQ</a></li>
+						<li><a class="link-menu" href="#program">Programa</a></li>
+						<li><a class="link-menu" href="#multimedia">Multimedia</a></li>
+						<li><a class="link-menu" href="#register">Registro</a></li>
+					<!-- 	<li><a class="link-menu" href="#">Patrocinadores</a></li>
+						<li><a class="link-menu" href="#">FAQ</a></li> -->
 					</ul>
+
 				</div>
 			</div>
 		</div>
@@ -48,13 +49,14 @@
 		<div class="row expanded">
 			<div class="height-topbar width-100">
 				<div class="row align-center align-middle height-100">
-					<div class="large-12 columns">
-						<div style="background-image: url(<?=IMG?>Logo.png); height: 240px; width: 800px; margin: auto; background-size: cover; background-position: center;"></div>
+					<div class="large-12 medium-12 small-12 columns">
+						<div class="image-logo" style="background-image: url(<?=IMG?>Logo.png);"></div>
 					</div>
-					<div class="large-12 columns">
-						<h1 class="white-color text-25 text-center">El encuentro más grande de mujeres líderes en la industria de las Tecnologías de la Información en Querétaro</h1>
+					<div class="large-12 medium-12 small-12 columns">
+						<p class="text-center white-color text-first">Es un evento de mujeres para mujeres en dónde se comparten conocimientos, experiencias y visiones respecto al papel de la mujer en el ámbito profesional y en la industria de las tecnologías de la información.</p>
+						<h1 class="white-color text-25 text-center" style="font-weight: 600;">Mujeres guerreras, mujeres que inspiran</h1>
 					</div>
-					<div class="large-10 columns text-center">
+					<div class="large-10 medium-10 small-12 columns text-center">
 						<!-- <div class="row">
 							<div class="column">
 								<p>mes</p>
@@ -75,52 +77,48 @@
 							</div>
 						</div> -->
 						<div class="row text-center">
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">2 : </p>
+	
+							<div class="large medium small columns">
+								<p class="time white-color text-time" id="days"></p>
 							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">34 :</p>
+							<div class="large medium small columns">
+								<p class="time white-color text-time" id="hours"></p>
 							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">11 :</p>
+							<div class="large medium small columns">
+								<p class="time white-color text-time" id="minutes"></p>
 							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">31 :</p>
-							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">39</p>
+							<div class="large medium small columns">
+								<p class="time white-color text-time" id="second"></p>
 							</div>
 						</div>
 						<div class="row text-center">
-							<div class="large- columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">mes</p>
+							
+							<div class="large medium small columns">
+								<p class="text-time white-color text-time2" id="textDay"></p>
 							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">días</p>
+							<div class="large medium small columns">
+								<p class="text-time white-color text-time2" id="textHours"></p>
 							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">horas</p>
+							<div class="large medium small columns">
+								<p class="text-time white-color text-time2" id="textMinutes"></p>
 							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">minutos</p>
-							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">segundos</p>
+							<div class="large medium small columns">
+								<p class="text-time white-color text-time2" id="textSeconds"></p>
 							</div>
 						</div>
 						<!-- <div id="countdown"></div> -->
 
 					</div>
-					<div class="large-12 columns text-center">
+					<div class="large-12 medium-12 small-12 columns text-center">
 						<div class="row">
-							<div class="large-2 large-offset-5 columns padding-rl-0">
-								<a class="button link-menu white width-100 margin-bottom-0" href="">¡Regístrate Ahora!</a>
+							<div class="large-2 large-offset-5 medium-4 medium-offset-4 small-4 small-offset-4 columns padding-rl-0">
+								<a class="button link-menu white width-100 margin-bottom-0" href="#register">¡Regístrate Ahora!</a>
 							</div>
 						</div>
 
 					</div>
-					<div class="large-10 columns text-center">
-						<p class="white-color text-15">13 de marzo de 2019 | Centro de Negocios de la Universidad Autónoma de Querétaro</p>
+					<div class="large-10 medium-10 small-10 columns text-center">
+						<p class="white-color text-15 text-bottom">13 de marzo de 2019 | Centro de Negocios de la Universidad Autónoma de Querétaro</p>
 					</div>
 				</div>
 			</div>
@@ -130,9 +128,9 @@
 	<!-- Program -->
 	<section class="gradient-2">
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+		<div class="row padding-general-title" id="program">
 			<div class="large-12 medium-12 small-12 columns">
-				<h1 class="title-page">Programa</h1>
+				<h1 class="title-page" >Programa</h1>
 				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
 			</div>
 		</div>
@@ -140,7 +138,58 @@
 		<div class="row">
 			<div class="large-12 medium-12 small-12 columns">
 
-				<ul class="accordion transparent" data-accordion data-allow-all-closed="true">
+				<ul class="accordion transparent border-bottom" data-accordion data-allow-all-closed="true">
+					<li class="accordion-item border-bt" data-accordion-item="">
+						<a href="#" class="accordion-title">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns">
+									<h4 class="margin-0">8:30 am</h4>
+								</div>
+								<div class="large-10 medium-9 small-9 columns">
+									<h4 class="margin-0">Recepción</h4>
+								</div>
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="zvzzfy-accordion-label" aria-hidden="true" id="zvzzfy-accordion" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<div class="row">
+										<div class="large-12 medium-12 small-12 columns">
+											<h5>En la recepción se te pedirá tu código QR para confirmar tu asistencia y se te entregará tu kit de bienvenida al evento.</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns">
+									<h4 class="margin-0">9:00 am</h4>
+								</div>
+								<div class="large-10 medium-9 small-9 columns">
+									<h4 class="margin-0">Inauguración</h4>
+								</div>
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="zvzzfy-accordion-label" aria-hidden="true" id="zvzzfy-accordion" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<div class="row">
+										<div class="large-12 medium-12 small-12 columns">
+											<h5>Nuestra recotra la Dra. Margarita Teresa de Jesús García Gasca nos hará el honor de inaugurar WomenIT 2019.</h5>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+
 					<li class="accordion-item" data-accordion-item="">
 						<a href="#" class="accordion-title border-top">
 							<div class="row">
@@ -166,7 +215,9 @@
 											<div class="background-image" style="background-image: url(<?=IMG?>Dra.TeresaGarciaGasca.jpg);"></div>
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle ">
-											<p class="margin-0 blue-color p-name">Dra. Teresa García Gasca</p>
+											<p class="margin-0 blue-color p-name">Dra. Margarita Teresa de Jesús García Gasca</p>
+											<p class="margin-0 p-name">Rectora de la Universidad Autónoma de Querétaro</p>
+
 										</div>
 									</div>
 									<div class="row padding-vertical-1">
@@ -175,6 +226,8 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Dra. Juana Elizabeth Elton</p>
+											<p class="margin-0 p-name">Facultad de Ciencias Naturales</p>
+
 										</div>
 									</div>
 									<div class="row padding-vertical-1">
@@ -183,6 +236,7 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Lic. Laura Pérez Tellez</p>
+											<p class="margin-0 p-name">Facultad de Lenguas y Letras</p>
 										</div>
 									</div>
 									<div class="row padding-vertical-1">
@@ -191,6 +245,8 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Dra. en C. P. S. Marcela Ávila Eggleton</p>
+											<p class="margin-0 p-name">Facultad de Ciencias Políticas y Sociales</p>
+
 										</div>
 									</div>
 									<div class="row padding-vertical-1">
@@ -199,6 +255,26 @@
 										</div>
 										<div class="large-10 medium-10 small-10 columns align-self-middle">
 											<p class="margin-0 blue-color p-name">Dra. Silvia Lorena Amaya Llano</p>
+											<p class="margin-0 p-name">Facultad de Química</p>
+
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-1 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.MargaritaEspinosa.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. Ma. Margarita Espinoza Blas</p>
+											<p class="margin-0 p-name">Facultad de Filosofía</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-1 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>user-female.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">M.C.E Ma. Guadalupe Perea Ortiz</p>
+											<p class="margin-0 p-name">Facultad de Enfermería</p>
 										</div>
 									</div>
 								</div>
@@ -206,33 +282,6 @@
 						</div>
 					</li>
 
-					<li class="accordion-item border-bt" data-accordion-item="">
-						<a href="#" class="accordion-title">
-							<div class="row">
-								<div class="large-2 medium-3 small-3 columns">
-									<h4 class="margin-0">8:00 am</h4>
-								</div>
-								<div class="large-10 medium-9 small-9 columns">
-									<h4 class="margin-0">Recepción</h4>
-								</div>
-							</div>
-						</a>
-						<div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="zvzzfy-accordion-label" aria-hidden="true" id="zvzzfy-accordion" style="display: none;">
-							<div class="row">
-								<div class="large-2 medium-3 small-3 columns"></div>
-								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
-									<div class="row">
-										<div class="large-1 medium-1 small-2 columns">
-											hola
-										</div>
-										<div class="large-11 medium-10 small-10 columns">
-											contenido
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</li>
 
 				</ul>
 
@@ -243,7 +292,7 @@
 	<!-- Multimedia -->
 	<section class="">
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+		<div class="row padding-general-title" id="multimedia">
 			<div class="large-12 medium-12 small-12 columns">
 				<h1 class="title-page">Multimedia</h1>
 				<h2>Reviviendo WomenIT 2018</h2>
@@ -305,9 +354,9 @@
 	</section>
 
 	<!-- Registro -->
-	<section class="height-topbar" style="border: 1px solid red">
+	<section class="height-topbar">
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+		<div class="row padding-general-title" id="register">
 			<div class="large-12 medium-12 small-12 columns">
 				<h1 class="title-page">Regístrate</h1>
 				<h2>¿Estás interesada en participar? Aparta tu lugar con el siguiente registro:</h2>
@@ -317,7 +366,7 @@
 		<!-- Content -->
 		<div id="formFirst">
 			<div class="row text-center align-center" >
-				<div class="large-6 columns">
+				<!-- <div class="large-6 columns">
 					<div class="row align-center">
 						<div class="large-12 columns">
 							<h3 class="dark-blue-color">Grupo</h3>
@@ -329,16 +378,16 @@
 							<a class="button link-menu white width-100 margin-bottom-0" id="buttonGroup">¡Registra tu Grupo!</a>
 						</div>
 					</div>
-				</div>
-				<div class="large-6 columns">
+				</div> -->
+				<div class="large-12 medium-12 small-12 columns">
 					<div class="row align-center">
-						<div class="large-12 columns">
+						<div class="large-12 medium-12 small-12 columns">
 							<h3 class="dark-blue-color">Individual</h3>
 						</div>
-						<div class="large-12 columns paddin">
-							<p>Explicar de que trata esta sección</p>
+						<div class="large-12 medium-12 small-12 columns paddin">
+							<!-- <p>Explicar de que trata esta sección</p> -->
 						</div>
-						<div class="large-5 columns">
+						<div class="large-5 medium-4 small-6 columns">
 							<a class="button link-menu white width-100 margin-bottom-0" id="buttonIndividual"  onclick="datos()">¡Regístrate Ahora!</a>
 						</div>
 					</div>
@@ -421,31 +470,31 @@
 	</section>
 
 	<!-- Patrocinadores -->
-	<section class="">
+	<!-- <section class=""> -->
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+		<!-- <div class="row padding-general-title">
 			<div class="large-12">
 				<h1 class="title-page">Patrocinadores</h1>
 				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
 			</div>
-		</div>
+		</div> -->
 		<!-- Content -->
-		<div class="row">
+	<!-- 	<div class="row">
 
 		</div>
-	</section>
+	</section> -->
 
 	<!-- FAQ -->
-	<section class="">
+	<!-- <section class=""> -->
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+	<!-- 	<div class="row padding-general-title">
 			<div class="large-12">
 				<h1 class="title-page">FAQ</h1>
 				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
 			</div>
-		</div>
+		</div> -->
 		<!-- Content -->
-		<div class="row">
+		<!-- <div class="row">
 			<div class="large-12 medium-12 small-12 columns">
 
 				<ul class="accordion transparent" data-accordion data-allow-all-closed="true">
@@ -529,7 +578,7 @@
 
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<script src="<?=JS?>config.js"></script>
 	<script src="<?=JS?>jquery-3.1.1.js"></script>
 	<script src="<?=JS?>funciones-datos.js"></script>
