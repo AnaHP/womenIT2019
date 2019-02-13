@@ -5,7 +5,7 @@ class Correo_model extends Model{
   }
   public function getParticipantes($datos)
   {
-    $participantes = $this->db->select("*","registroParticipantes","codigoConfirmacion = '{$datos}' AND estatus='Aplicada'");
+    $participantes = $this->db->select("*","registroParticipantes","codigoAcceso = '{$datos}' AND estatusAsistencia='1' ");
     return $participantes;
   }
 

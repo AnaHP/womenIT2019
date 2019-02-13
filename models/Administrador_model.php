@@ -19,7 +19,7 @@ class Administrador_model extends Model{
     }
     public function confirmadas()
     {
-      $number = $this->db->select("count(*) as contador","registroparticipantes","estatus = 'noAplicada'");
+      $number = $this->db->select("count(*) as contador","registroparticipantes","estatusAsistencia = '0' ");
       return $number['contador'];
     }
 
@@ -54,13 +54,13 @@ class Administrador_model extends Model{
 
     public function confirmar($datos)
     {
-      return $this->db->Update(array('estatus' => 'Aplicada'),"registroParticipantes", "idRegistro='{$datos}'");
+      return $this->db->Update(array('estatusAsistencia' => '1'),"registroParticipantes", "idRegistro='{$datos}'");
 
     }
 
     public function buscador($busqueda)
     {
-      return $this->db->queryStrict("SELECT * FROM registroparticipantes res NATURAL JOIN instituciones inst WHERE res.estatusCodigo LIKE 'Confirmado' AND (res.codigoConfirmacion LIKE '{$busqueda}%' OR res.nombre LIKE '%{$busqueda}%'
+      return $this->db->queryStrict("SELECT * FROM registroparticipantes res NATURAL JOIN instituciones inst WHERE res.verificacionCorreo LIKE '1' AND (res.codigoAcceso LIKE '{$busqueda}%' OR res.nombre LIKE '%{$busqueda}%'
       OR res.apellidos LIKE '%{$busqueda}%') ORDER BY res.nombre LIMIT 10;");
     }
 

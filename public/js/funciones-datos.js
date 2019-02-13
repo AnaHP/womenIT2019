@@ -38,12 +38,11 @@ function registrar(){
   var insti = $("#institutioninput").val();
   var info = $("#eventInput").val();
   /*var online = $("#onlineInput").val(); -> Si estara en linea*/
-  /*var grupo = $("#grupoInput).val(); -> grupos en el que se*/
+  /*var grupo = $("#grupoInput).val(); -> grupos */
       if (checkEmpty($("#nameInput")) || checkEmpty($("#lastNameInput")) || checkEmpty($("#dateInput")) || checkEmpty($("#emailInput")) || checkEmpty($("#occupationInput")) || checkEmpty($("#institutioninput")) || checkEmpty($("#eventInput"))) {
         notificacion_("Revisa los campos faltantes", "Completar campos");
         $("#register").attr( "disabled", false );
         $("#register").attr("onclick", "registrar()");
-
         return null;
       }
       if (!validateMail($("#correo"))) {

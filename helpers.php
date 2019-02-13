@@ -22,7 +22,6 @@ function changeJsConfig(bool $opcion)
                 img: "'.URL.'public/images/"
             }
             var imported = document.createElement("script");
-            imported.src = "'.URL.'public/js/complementos.js";
             document.head.appendChild(imported);' . PHP_EOL);
         @fclose($file);
     }

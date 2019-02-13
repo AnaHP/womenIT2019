@@ -23,7 +23,7 @@ class Index_model extends Model
 	}
 
 	public function getCodigos(){
-		return $this->db->select('codigoConfirmacion','registroparticipantes');
+		return $this->db->select('codigoAcceso','registroparticipantes');
 	}
 
 	//FIXME: #Cambiar los datos
@@ -37,8 +37,8 @@ class Index_model extends Model
 			'idInstitucion'			=> $datos['institucion'],
 			'fuenteInformacion'	=> $datos['informacion'],
 			'codigoAcceso'=> $codigo,
-			'estatusAsistencia'						=> 0,
-			'verificacionCorreo'			=> 0
+			'estatusAsistencia'						=> '0',
+			'verificacionCorreo'			=> '0'
 			#,'online'					=>0,
 			#'idGrupo'			=>$datos['idGrupo']
 		);

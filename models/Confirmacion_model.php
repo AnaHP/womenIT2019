@@ -8,7 +8,7 @@ class Confirmacion_model extends Model
   public function confirmar($datos){
      $cod = $this->db->select('*', 'registroParticipantes', "codigoAcceso='{$datos}'");
     if (is_array($cod)) {
-      $this->db->Update(array('verificacionCorreo' => 1),"registroParticipantes", "codigoAcceso='{$datos}'");
+      $this->db->Update(array('verificacionCorreo' => '1'),"registroParticipantes", "codigoAcceso='{$datos}'");
       return "1";
     }else{
       return "0";

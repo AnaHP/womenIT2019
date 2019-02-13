@@ -64,7 +64,7 @@ class Administrador extends Controller{
         foreach ($busqueda as $buscar => $columna) {
           $id = $columna['idRegistro'];
           $nombreA = $columna['Nombre']." ".$columna['Apellidos'];
-          $codigo = $columna['codigoConfirmacion'];
+          $codigo = $columna['codigoAcceso'];
           $correo = $columna['correo'];
           $instituciones = $columna['nombreInstitucion'];
           $participantes .= "<tr>
@@ -72,7 +72,7 @@ class Administrador extends Controller{
           <td>{$codigo}</td>
           <td>{$correo}</td>
           <td>{$instituciones}</td>"
-          if ($columna['estatus']=="noAplicada"){
+          if ($columna['estatusAsistencia']==0){
             $participantes .=
            "<td>
               <button type='button' id='{$id}' onclick='confirmar({$id})' name='button'>Confirmar</button>
@@ -117,7 +117,7 @@ class Administrador extends Controller{
           $contador = $contador+1;
           $asistente .= [$contador,$columna["Nombre"]." ".$columna["Apellidos"],
           $columna["correo"],$columna["fechaNacimiento"], $columna["nombreRol"],
-          $columna["nombreInstitucion"], $columna["estatusCodigo"]
+          $columna["nombreInstitucion"], $columna["verificacionCorreo"]
         ]
       }
     }
