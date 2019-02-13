@@ -158,7 +158,7 @@
 								<div class="large-10 medium-9 small-9 columns border-top padding-left-0 padding-right-0">
 									<div class="row">
 										<div class="large-12 columns">
-											
+
 										</div>
 									</div>
 									<div class="row padding-vertical-1">
@@ -251,7 +251,56 @@
 		</div>
 		<!-- Content -->
 		<div class="row">
-
+			<div class="large-12 columns">
+			</div>
+			<div class="large-6 columns">
+				<div style="background-image: url(<?=IMG?>IMG_0584.jpg); height: 350px; width: 500px; margin: auto; background-size: cover; background-position: center;"></div>
+			</div>
+			<div class="large-6 columns">
+				<div style="background-image: url(<?=IMG?>IMG_0626.jpg); height: 350px; width: 500px; margin: auto; background-size: cover; background-position: center;"></div>
+			</div>
+			<div class="large-6 columns">
+				<div style="background-image: url(<?=IMG?>IMG_0787.jpg); height: 350px; width: 500px; margin: auto; background-size: cover; background-position: center;"></div>
+			</div>
+			<div class="large-6 columns">
+				<div style="background-image: url(<?=IMG?>IMG_0865.jpg); height: 350px; width: 500px; margin: auto; background-size: cover; background-position: center;"></div>
+			</div>
+			<div class="large-6 columns">
+				<div style="background-image: url(<?=IMG?>IMG_0556.jpg); height: 350px; width: 500px; margin: auto; background-size: cover; background-position: center;"></div>
+			</div>
+			<div class="large-6 columns">
+				<div style="background-image: url(<?=IMG?>IMG_0704.jpg); height: 350px; width: 500px; margin: auto; background-size: cover; background-position: center;"></div>
+			</div>
+			<div class="large-6 columns">
+				<div style="background-image: url(<?=IMG?>IMG_0537.jpg); height: 350px; width: 500px; margin: auto; background-size: cover; background-position: center;"></div>
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0630.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0649.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0674.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0695.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0730.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0772.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0779.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0674.jpg" alt="">
+			</div>
+			<div class="large-6 columns">
+				<img src="./public/images/IMG_0859.jpg" alt="">
+			</div>
 		</div>
 	</section>
 
@@ -398,7 +447,7 @@
 		<!-- Content -->
 		<div class="row">
 			<div class="large-12 medium-12 small-12 columns">
-				
+
 				<ul class="accordion transparent" data-accordion data-allow-all-closed="true">
 					<li class="accordion-item" data-accordion-item="">
 						<a href="#" class="accordion-title border-top">
@@ -406,7 +455,7 @@
 								<div class="large-12 medium-3 small-3 columns">
 									<h4 class="margin-0">Pregunta</h4>
 								</div>
-								
+
 							</div>
 						</a>
 						<div class="accordion-content" data-tab-content="" style="display: none;">
@@ -425,7 +474,7 @@
 								<div class="large-12 medium-3 small-3 columns">
 									<h4 class="margin-0">Pregunta</h4>
 								</div>
-								
+
 							</div>
 						</a>
 						<div class="accordion-content" data-tab-content="" style="display: none;">
@@ -444,7 +493,7 @@
 								<div class="large-12 medium-3 small-3 columns">
 									<h4 class="margin-0">Pregunta</h4>
 								</div>
-								
+
 							</div>
 						</a>
 						<div class="accordion-content" data-tab-content="" style="display: none;">
@@ -463,7 +512,7 @@
 								<div class="large-12 medium-3 small-3 columns">
 									<h4 class="margin-0">Pregunta</h4>
 								</div>
-								
+
 							</div>
 						</a>
 						<div class="accordion-content" data-tab-content="" style="display: none;">
@@ -475,7 +524,7 @@
 							</div>
 						</div>
 					</li>
-					
+
 				</ul>
 
 			</div>
