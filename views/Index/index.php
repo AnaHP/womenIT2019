@@ -31,30 +31,37 @@
 					<!-- Logo -->
 				</div>
 				<div class="top-bar-right">
-					<ul class="menu white">
-						<li><a class="link-menu" href="#">Programa</a></li>
-						<li><a class="link-menu" href="#">Multimedia</a></li>
-						<li><a class="link-menu" href="#">Registro</a></li>
-						<li><a class="link-menu" href="#">Patrocinadores</a></li>
-						<li><a class="link-menu" href="#">FAQ</a></li>
+					<ul class="menu white align-right">
+						<li><a class="link-menu" href="#program">Programa</a></li>
+						<li><a class="link-menu" href="#multimedia">Multimedia</a></li>
+						<li><a class="link-menu" href="#register">Registro</a></li>
+					<!-- 	<li><a class="link-menu" href="#">Patrocinadores</a></li>
+						<li><a class="link-menu" href="#">FAQ</a></li> -->
 					</ul>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Home -->
+	<img class="escudo" src="<?=IMG?>uaq.png" alt="">
+	<img class="escudo-fif"src="<?=IMG?>fif.png" alt="" >
+
+
+
 	<section class="gradient-1">
 		<div class="row expanded">
 			<div class="height-topbar width-100">
 				<div class="row align-center align-middle height-100">
-					<div class="large-12 columns">
-						<div style="background-image: url(images/Logo.png); height: 240px; width: 800px; margin: auto; background-size: cover; background-position: center;"></div>
+					<div class="large-12 medium-12 small-12 columns">
+						<div class="image-logo" style="background-image: url(<?=IMG?>logoconano.png);"></div>
 					</div>
-					<div class="large-12 columns">
-						<h1 class="white-color text-25 text-center">El encuentro más grande de mujeres líderes en la industria de las Tecnologías de la Información en Querétaro</h1>
+					<div class="large-12 medium-12 small-12 columns">
+						<p class="text-center white-color text-first margin-0">Es un evento de mujeres para mujeres en dónde se comparten conocimientos, experiencias y visiones respecto al papel de la mujer en el ámbito profesional y en la industria de las tecnologías de la información.</p>
+						<h1 class="white-color text-center margin-0 text-second" style="font-weight: 600;">Mujeres guerreras, mujeres que inspiran</h1>
 					</div>
-					<div class="large-10 columns text-center">
+					<div class="large-10 medium-10 small-12 columns text-center">
 						<!-- <div class="row">
 							<div class="column">
 								<p>mes</p>
@@ -74,53 +81,64 @@
 								<p id="second"></p>
 							</div>
 						</div> -->
-						<div class="row text-center">
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">2 : </p>
+						<div class="row text-center align-center">
+							<div class="large-9 small-12 columns">
+								<div class="row">
+									<div class="large medium small columns">
+										<p class="white-color text-time" id="days"></p>
+										<p class="white-color text-time2" id="textDay"></p>
+
+									</div>
+									<div class="large medium small columns">
+										<p class="white-color text-time" id="hours"></p>
+										<p class="white-color text-time2" id="textHours"></p>
+
+									</div>
+									<div class="large medium small columns">
+										<p class="white-color text-time" id="minutes"></p>
+										<p class="white-color text-time2" id="textMinutes"></p>
+
+									</div>
+									<div class="large medium small columns">
+										<p class="white-color text-time" id="second"></p>
+										<p class="white-color text-time2" id="textSeconds"></p>
+
+									</div>
+								</div>
 							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">34 :</p>
-							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">11 :</p>
-							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">31 :</p>
-							</div>
-							<div class="large columns">
-								<p class="time white-color" style="margin-bottom: 0; font-size: 4rem;">39</p>
-							</div>
+							
 						</div>
-						<div class="row text-center">
-							<div class="large- columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">mes</p>
+						<!-- <div class="row text-center align-center">
+							<div class="large-9 columns">
+								<div class="row">
+									<div class="large medium small columns">
+										<p class="text-time white-color text-time2" id="textDay"></p>
+									</div>
+									<div class="large medium small columns">
+										<p class="text-time white-color text-time2" id="textHours"></p>
+									</div>
+									<div class="large medium small columns">
+										<p class="text-time white-color text-time2" id="textMinutes"></p>
+									</div>
+									<div class="large medium small columns">
+										<p class="text-time white-color text-time2" id="textSeconds"></p>
+									</div>
+								</div>
 							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">días</p>
-							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">horas</p>
-							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">minutos</p>
-							</div>
-							<div class="large columns">
-								<p class="text-time white-color" style="margin-bottom: 0; font-size: 1.8rem;">segundos</p>
-							</div>
-						</div>
+						</div> -->
 						<!-- <div id="countdown"></div> -->
 
 					</div>
-					<div class="large-12 columns text-center">
+					<div class="large-12 medium-12 small-12 columns text-center">
 						<div class="row">
-							<div class="large-2 large-offset-5 columns padding-rl-0">
-								<a class="button link-menu white width-100 margin-bottom-0" href="">¡Regístrate Ahora!</a>
+							<div class="large-2 large-offset-5 medium-4 medium-offset-4 small-4 small-offset-4 columns padding-rl-0">
+								<a class="button button-register white width-100 margin-bottom-0" href="#register">¡Regístrate Ahora!</a>
 							</div>
 						</div>
 
 					</div>
-					<div class="large-10 columns text-center">
-						<p class="white-color text-15">13 de marzo de 2019 | Centro de Negocios de la Universidad Autónoma de Querétaro</p>
+					<div class="large-10 medium-10 small-10 columns text-center">
+						<p class="white-color text-15 text-bottom margin-0">13 de marzo de 2019 | Centro de Negocios de la Universidad Autónoma de Querétaro</p>
 					</div>
 				</div>
 			</div>
@@ -130,64 +148,163 @@
 	<!-- Program -->
 	<section class="gradient-2">
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+		<div class="row padding-general-title" id="program">
 			<div class="large-12 medium-12 small-12 columns">
-				<h1 class="title-page">Programa</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2>
+				<h1 class="title-page" >Programa</h1>
+				<!-- 	<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h2> -->
 			</div>
 		</div>
 		<!-- Content -->
 		<div class="row">
 			<div class="large-12 medium-12 small-12 columns">
-				<details close>
-					<summary>
-						<div class="row">
-							<div class="large-1 columns">
-								hora
+
+				<ul class="accordion transparent border-bottom" data-accordion data-allow-all-closed="true">
+					<li class="accordion-item border-bt" data-accordion-item="">
+						<a href="#" class="accordion-title">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 text-hour-program">8:00 am</h4>
+								</div>
+								<div class="large-10 medium-9 small-9 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0">Recepción</h4>
+								</div>
 							</div>
-							<div class="large-9 columns">
-								Nombre del evento
-							</div>
-							<div class="large-1 columns">
-								Más
+						</a>
+						<div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="zvzzfy-accordion-label" aria-hidden="true" id="zvzzfy-accordion" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<div class="row">
+										<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+											<h5 class="p-name">En la recepción se te pedirá tu código QR para confirmar tu asistencia y se te entregará tu kit de bienvenida al evento.</h5>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-					</summary>
-					<div class="row align-right">
-						<div class="large-1 columns"></div>
-						<div class="large-1 columns">
-							<div style="background-image: url(img/aztlan.jpg);"></div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 text-hour-program">8:30 am</h4>
+								</div>
+								<div class="large-10 medium-9 small-9 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0">Inauguración</h4>
+								</div>
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" role="tabpanel" aria-labelledby="zvzzfy-accordion-label" aria-hidden="true" id="zvzzfy-accordion" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									<div class="row">
+										<div class="large-12 medium-12 small-12 columns padding-left-0 padding-right-0">
+											<h5 class="p-name">Nuestra rectora la Dra. Margarita Teresa de Jesús García Gasca nos hará el honor de inaugurar WomenIT 2019.</h5>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="large-9 columns">
-							Descripción
+					</li>
+
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0 text-hour-program">9:00 am</h4>
+								</div>
+								<div class="large-10 medium-9 small-9 columns padding-left-0 padding-right-0">
+									<h4 class="margin-0">Panel: Líderes Universitarias</h4>
+								</div>
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns border-top padding-left-0 padding-right-0">
+									<div class="row">
+										<div class="large-12 columns">
+
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns center text-center padding-right-0">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.TeresaGarciaGasca.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. Margarita Teresa de Jesús García Gasca</p>
+											<p class="margin-0 p-name">Rectora de la Universidad Autónoma de Querétaro</p>
+
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.JuanaElizabethElton.png);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. Juana Elizabeth Elton</p>
+											<p class="margin-0 p-name">Facultad de Ciencias Naturales</p>
+
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.LauraPerezTellez.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Lic. Laura Pérez Tellez</p>
+											<p class="margin-0 p-name">Facultad de Lenguas y Letras</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.MarcelaAvila.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. en C. P. S. Marcela Ávila Eggleton</p>
+											<p class="margin-0 p-name">Facultad de Ciencias Políticas y Sociales</p>
+
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.SilviaLorenaAmaya.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. Silvia Lorena Amaya Llano</p>
+											<p class="margin-0 p-name">Facultad de Química</p>
+
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>Dra.MargaritaEspinosa.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">Dra. Ma. Margarita Espinoza Blas</p>
+											<p class="margin-0 p-name">Facultad de Filosofía</p>
+										</div>
+									</div>
+									<div class="row padding-vertical-1">
+										<div class="large-2 medium-2 small-2 columns">
+											<div class="background-image" style="background-image: url(<?=IMG?>user-female.jpg);"></div>
+										</div>
+										<div class="large-10 medium-10 small-10 columns align-self-middle">
+											<p class="margin-0 blue-color p-name">M.C.E Ma. Guadalupe Perea Ortiz</p>
+											<p class="margin-0 p-name">Facultad de Enfermería</p>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
+					</li>
+
+
+				</ul>
+
 			</div>
 		</div>
 	</section>
@@ -195,7 +312,7 @@
 	<!-- Multimedia -->
 	<section class="">
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+		<div class="row padding-general-title" id="multimedia">
 			<div class="large-12 medium-12 small-12 columns">
 				<h1 class="title-page">Multimedia</h1>
 				<h2>Reviviendo WomenIT 2018</h2>
@@ -203,24 +320,82 @@
 		</div>
 		<!-- Content -->
 		<div class="row">
-
-		</div>
-	</section>
-
-	<!-- Registro -->
-	<section class="height-topbar" style="border: 1px solid red">
-		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
 			<div class="large-12 medium-12 small-12 columns">
-				<h1 class="title-page">Regístrate</h1>
-				<h2>¿Estás interesada en participar? Aparta tu lugar con el siguiente registro:</h2>
-			</div>
+				<video width="100%" controls>
+					<source src="./public/images/vcorta.mp4" type="video/mp4">
+						<source src="./public/images/vcorta.mp4" type="video/mp4">
+							Your browser does not support HTML5 video.
+						</video>
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0584.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0626.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0787.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0865.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0556.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0704.jpg" alt="">
+					</div>
 
-		</div>
-		<!-- Content -->
-		<div id="formFirst">
-			<div class="row text-center align-center" >
-				<div class="large-6 columns">
+
+
+
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0537.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0630.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0649.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0674.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0695.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0730.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0772.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0779.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0674.jpg" alt="">
+					</div>
+					<div class="large-6 medium-6 small-12 columns padding-top-1">
+						<img src="./public/images/IMG_0859.jpg" alt="">
+					</div>
+				</div>
+			</section>
+
+			<!-- Registro -->
+			<section class="height-topbar">
+				<!-- Title and Paragraph -->
+				<div class="row padding-general-title" id="register">
+					<div class="large-12 medium-12 small-12 columns">
+						<h1 class="title-page">Regístrate</h1>
+						<h2>¿Estás interesada en participar? Aparta tu lugar con el siguiente registro:</h2>
+					</div>
+
+				</div>
+				<!-- Content -->
+				<div id="formFirst">
+					<div class="row text-center align-center" >
+				<!-- <div class="large-6 columns">
 					<div class="row align-center">
 						<div class="large-12 columns">
 							<h3 class="dark-blue-color">Grupo</h3>
@@ -232,17 +407,17 @@
 							<a class="button link-menu white width-100 margin-bottom-0" id="buttonGroup">¡Registra tu Grupo!</a>
 						</div>
 					</div>
-				</div>
-				<div class="large-6 columns">
+				</div> -->
+				<div class="large-12 medium-12 small-12 columns">
 					<div class="row align-center">
-						<div class="large-12 columns">
+						<div class="large-12 medium-12 small-12 columns">
 							<h3 class="dark-blue-color">Individual</h3>
 						</div>
-						<div class="large-12 columns paddin">
-							<p>Explicar de que trata esta sección</p>
+						<div class="large-12 medium-12 small-12 columns paddin">
+							<!-- <p>Explicar de que trata esta sección</p> -->
 						</div>
-						<div class="large-5 columns">
-							<a class="button link-menu white width-100 margin-bottom-0" id="buttonIndividual"  onclick="datos()">¡Regístrate Ahora!</a>
+						<div class="large-5 medium-4 small-6 columns">
+							<a class="button button-register white width-100 margin-bottom-0" id="buttonIndividual"  onclick="datos()">¡Regístrate Ahora!</a>
 						</div>
 					</div>
 				</div>
@@ -324,81 +499,117 @@
 	</section>
 
 	<!-- Patrocinadores -->
-	<section class="">
+	<!-- <section class=""> -->
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+		<!-- <div class="row padding-general-title">
 			<div class="large-12">
 				<h1 class="title-page">Patrocinadores</h1>
 				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
 			</div>
-		</div>
+		</div> -->
 		<!-- Content -->
-		<div class="row">
+	<!-- 	<div class="row">
 
 		</div>
-	</section>
+	</section> -->
 
 	<!-- FAQ -->
-	<section class="">
+	<!-- <section class=""> -->
 		<!-- Title and Paragraph -->
-		<div class="row padding-general-title">
+	<!-- 	<div class="row padding-general-title">
 			<div class="large-12">
 				<h1 class="title-page">FAQ</h1>
 				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h2>
 			</div>
-		</div>
+		</div> -->
 		<!-- Content -->
-		<div class="row">
+		<!-- <div class="row">
 			<div class="large-12 medium-12 small-12 columns">
-				<div class="row">
-					<div class="large-2 columns">
-						hora
-					</div>
-					<div class="large-9 columns">
-						Nombre del evento
-					</div>
-					<div class="large-1 columns">
-						Más
-					</div>
-				</div>
-				<details close>
-					<summary>
-						<div class="row">
-							<div class="large columns">
-								hora
+
+				<ul class="accordion transparent" data-accordion data-allow-all-closed="true">
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+
 							</div>
-							<div class="large-10 columns">
-								Nombre del evento
-							</div>
-							<div class="large columns">
-								Más
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
 							</div>
 						</div>
-					</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
-				<details close>
-					<summary>Lorem ipsum dolor sit amet, consectetur adipisicing elit</summary>
-					<img src="" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-				</details>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="accordion-item border-bottom" data-accordion-item="">
+						<a href="#" class="accordion-title border-top">
+							<div class="row">
+								<div class="large-12 medium-3 small-3 columns">
+									<h4 class="margin-0">Pregunta</h4>
+								</div>
+
+							</div>
+						</a>
+						<div class="accordion-content" data-tab-content="" style="display: none;">
+							<div class="row">
+								<div class="large-2 medium-3 small-3 columns"></div>
+								<div class="large-10 medium-9 small-9 columns padding-1 border-top">
+									Respuesta
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<script src="<?=JS?>config.js"></script>
-  	<script src="<?=JS?>jquery-3.1.1.js"></script>
+	<script src="<?=JS?>jquery-3.1.1.js"></script>
 	<script src="<?=JS?>funciones-datos.js"></script>
 	<script src="<?=JS?>validarInputs.js"></script>
 	<script src="<?=JS?>vendor/jquery.js"></script>
@@ -408,7 +619,7 @@
 	<script src="<?=JS?>cleave.js"></script>
 	<script src="<?=JS?>cleave.min.js"></script>
 	<script src="<?=JS?>register.js"></script>
-		<script src="<?=JS?>time.js"></script>
+	<script src="<?=JS?>time.js"></script>
 
 	<script>
 		$(document).foundation();

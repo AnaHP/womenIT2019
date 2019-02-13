@@ -22,8 +22,12 @@ body{
 	padding-left: 0 !important;
 }
 .padding-general-title{
-	padding-top: 4rem;
+	/*padding-top: 4rem;*/
+	padding-top: 8rem;
 	padding-bottom: 2rem;
+}
+.margin-a{
+	margin: auto;
 }
 .margin-bt-2{
 	margin-top: 2rem;
@@ -38,9 +42,9 @@ body{
 	align-items:center;
 }
 .row{
-	max-width: 75rem;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 75rem !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .hide{
@@ -48,6 +52,9 @@ body{
 }
 .show{
 	display: block;
+}
+.is-flex{
+	display: flex;
 }
 /* -------COLORES------ */
 :root{
@@ -67,6 +74,12 @@ body{
 }
 .white{
 	background: white !important;
+}
+.transparent{
+	background: transparent !important;
+}
+.blue-color{
+	color: var(--blue) !important;
 }
 /* ------------- General Styles ------------- */
 
@@ -96,7 +109,14 @@ body{
 	z-index: 2;
 	box-shadow: 0px 0px 20px -3px rgba(0,0,0,0.65) !important;
 }
+.sticky{
+	top: 0 !important;
+}
 .link-menu{
+	color: var(--dark-blue) !important;
+	font-weight: 500;
+}
+.link-menu:hover{
 	color: var(--general-pink) !important;
 }
 .sticky-topbar {
@@ -104,10 +124,48 @@ body{
 }
 
 /* -------------- Home ---------------- */
-
+.image-logo{
+	height: 243px; 
+	width: 700px; 
+	margin: auto; 
+	background-size: cover; 
+	background-position: center;
+}
+.escudo{
+	position: absolute; 
+	z-index: 10;  
+	margin-top: 20px;
+}
+.escudo-fif{
+	position: absolute; 
+	z-index: 10; 
+	margin-top: 20px; 
+	margin-left: 100px; height: 100px;
+}
+.text-time{
+	margin-bottom: 0; 
+	font-size: 4rem;
+}
+.text-time2{
+	margin-bottom: 0; 
+	font-size: 1.8rem;
+}
+.text-first{
+	font-size: 1.3rem;
+}
 .button-accept{
 	background: #283A53 !important;
 	color: white !important;
+}
+.button-register{
+	color: var(--general-pink) !important;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.button-register:hover{
+	color: white !important;
+	background: var(--general-pink) !important;
+
 }
 
 section {
@@ -147,7 +205,7 @@ section {
 
 /* -------------- PROGRAMA ---------------- */
 .gradient-2{
-	background-image: linear-gradient(0deg, rgba(247, 247, 247, 0.701961) 48%, rgba(253, 181, 125, 0.701961) 74.34%, rgba(229, 105, 178, 0.701961) 130.44%);
+	background-image: linear-gradient(0deg, rgb(247, 247, 247) 73%, rgba(229, 105, 178, 0.701961) 100.34%, rgba(229, 105, 178, 0.701961) 2.44%) !important;
 	background-position-x: initial;
 	background-position-y: initial;
 	background-size: initial;
@@ -176,64 +234,71 @@ section {
 	font-size: 2.5rem;
 	font-weight: 500;
 }
+.accordion-title{
+	border: none !important;
+	/*border-bottom: 1px solid var(--general-pink) !important;*/
+	color: var(--general-pink) !important;
+}
+.accordion-item:first-child > :first-child {
+	border-radius: 0 !important; 
+}
+
+.accordion-item:last-child > :last-child {
+	border-radius: 0 !important;
+}
+.accordion-title:hover{
+	background-color: 
+}
+.accordion-content{
+	border: none !important;
+	background: transparent !important;
+	padding: 0 !important;
+}
+.border-bt{
+	border-top: 1px solid var(--general-pink) !important;
+	border-bottom: 1px solid var(--general-pink) !important;
+}
+.border-top{
+	border-top: 1px solid var(--general-pink) !important;
+}
+.border-bottom{
+	border-bottom: 1px solid var(--general-pink) !important;
+}
+
 .large-12 h2{
 	color: var(--dark-gray);
 	font-size: 1rem;
 	text-align: center;
 }
-details{
-	width: 100%;
-	position: relative;
-	float: left;
-	cursor: pointer;
-	border-bottom: 1px solid var(--general-pink);
-}
-details > summary::-webkit-details-marker {
-	display: none;
-}
-summary{
-	line-height: 70px;
-	color: var(--general-pink);
-	font-size: 1.4rem;
-}
-details>img{
-	width: 20%;
-	position: relative;
-	float: left;
-}
-details p{
-	width: 80%;
-	position: relative;
-	float: left;
-}
+
 /* -------------- REGISTRATE ---------------- */
+/* --------------    FORM    ---------------- */
 
-
-
-
-
-/* -------------- FORM ---------------- */
-
+.background-image{
+	background-size: cover;
+	background-position: center;
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+}
+.p-name{
+	font-weight: 500;
+}
 
 .form-group {
 	position:relative !important;  
-
 	& + .form-group {
 		margin-top: 30px !important;
 	}
 }
-
 .form-label {
 	position: absolute !important;
 	left: 0 !important;
 	top: 10px !important;
 	color: #999 !important;
-	z-index: 10 !important;
 	transition: transform 150ms ease-out, font-size 150ms ease-out !important;
 	background: transparent !important;
-}
-.form-select{
-	margin-bottom: 0rem !important;
+	font-size: 0.9rem !important;
 }
 .label-select{
 	font-size: .75em;
@@ -268,4 +333,150 @@ details p{
 .form-input.filled {
 	box-shadow: 0 2px 0 0 var(--general-pink) !important;
 	background: transparent;
+}
+
+.button{
+	box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.65) !important;
+}
+
+@media only screen and (max-width: 40em) { 
+	.text-25{
+		font-size: 2rem;
+	}
+	.text-second{
+		font-size: 1.2rem;
+	}
+	.image-logo{
+		height: 70px; 
+		width: 200px; 
+		margin: auto; 
+		background-size: cover; 
+		background-position: center;
+	}
+	.text-time{
+		margin-bottom: 0; 
+		font-size: 2rem;
+	}
+	.text-time2{
+		margin-bottom: 0; 
+		font-size: 1rem;
+	}
+	.text-first{
+		font-size: 0.8rem;
+	}
+	.text-15{
+		font-size: 0.8rem;
+	}
+	.background-image{
+		background-size: cover;
+		background-position: center;
+		height: 30px;
+		width:30px;
+		border-radius: 50%;
+	}
+	.escudo{
+		position: absolute; 
+		z-index: 10;  
+		margin-top: 20px;
+		height: 50px;
+	}
+	.escudo-fif{
+		position: absolute; 
+		z-index: 10; 
+		margin-top: 20px; 
+		margin-left: 50px; 
+		height: 50px;
+	}
+	.p-name{
+	font-size: 0.9rem;
+}
+}
+
+/* min-width 641px and max-width 1024px*/
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+	.text-25{
+		font-size: 2rem;
+	}
+	.image-logo{
+		height: 140px; 
+		width: 400px;
+		margin: auto; 
+		background-size: cover; 
+		background-position: center;
+	}
+	.text-time{
+		margin-bottom: 0; 
+		font-size: 2rem;
+	}
+	.text-time2{
+		margin-bottom: 0; 
+		font-size: 1rem;
+	}
+	.text-first{
+		font-size: 1rem;
+	}
+	.text-15{
+		font-size: 0.9rem;
+	}
+	.escudo{
+		position: absolute; 
+		z-index: 10;  
+		margin-top: 20px;
+		height: 60px;
+	}
+	.escudo-fif{
+		position: absolute; 
+		z-index: 10; 
+		margin-top: 20px; 
+		margin-left: 60px; 
+		height: 60px;
+	}
+	.background-image{
+		background-size: cover;
+		background-position: center;
+		height: 50px;
+		width:50px;
+		border-radius: 50%;
+	}
+	.text-hour-program{
+		font-size: 1rem;
+	}
+
+}
+
+/* min-width 1025px and max-width 1440px*/
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+	.text-25{
+		font-size: 2rem;
+	}
+	/*.image-logo{
+		height: 170px; 
+		width: 500px; 
+		margin: auto; 
+		background-size: cover; 
+		background-position: center;
+	}*/
+	/*.text-time{
+		margin-bottom: 0; 
+		font-size: 2rem;
+	}
+	.text-time2{
+		margin-bottom: 0; 
+		font-size: 1rem;
+	}*/
+	
+
+}
+
+
+
+
+
+/* min-width 1441px and max-width 1920px*/
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { 
+
+}
+
+/* min-width 1921px, xxlarge screens */
+@media only screen and (min-width: 120.063em) { 
 }
